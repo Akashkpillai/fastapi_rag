@@ -5,7 +5,7 @@ app = FastAPI()
 
 @app.get("/health")
 def health():
-    return { "status" : "ok" }
+    return { "status" : "ok","code":"200" }
 
 @app.get("/document/{document_id}")
 def one_document(document_id:int):
