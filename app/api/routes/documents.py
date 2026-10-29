@@ -6,6 +6,7 @@ from fastapi.concurrency import run_in_threadpool
 # from app.db.repository import save_document
 from app.schemas.document import UploadSummary
 from app.services.pdf_parser import InvalidPDFError, parse_pdf
+from app.services.chunker import chunk_pages
 
 router = APIRouter(prefix="/document", tags=["documents"])
 
@@ -54,6 +55,7 @@ async def upload(file: UploadFile):
 
     filename = file.filename or "unnamed.pdf"
     # save_document(document_id, filename, usable_pages)
+    chunks = chunk_pages(document_id,usable_pages)
 
     return UploadSummary(
         document_id=document_id,
@@ -61,4 +63,5 @@ async def upload(file: UploadFile):
         page_count=len(pages),
         pages_with_text=len(usable_pages),
         empty_pages=empty_pages,
+        chunk_count=len(chunks)
     )
