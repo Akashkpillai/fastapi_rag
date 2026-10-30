@@ -1,0 +1,25 @@
+[
+  {"question": "What are the six Functions of the Framework Core?", "expected_pages": [14, 38], "must_mention": ["GOVERN", "IDENTIFY", "PROTECT", "DETECT", "RESPOND", "RECOVER"]},
+  {"question": "What does GV.SC-05 require?", "expected_pages": [41], "must_mention": ["contracts"]},
+  {"question": "What are the four Framework Tiers?", "expected_pages": [22, 35, 36], "must_mention": ["Partial", "Risk Informed", "Repeatable", "Adaptive"]},
+  {"question": "What is the difference between a Current Profile and a Target Profile?", "expected_pages": [18], "must_mention": ["Current Profile", "Target Profile"]},
+  {"question": "What is a Community Profile?", "expected_pages": [18], "must_mention": ["Target Profile"]},
+  {"question": "What are the steps for creating and using Framework Profiles?", "expected_pages": [19, 20], "must_mention": ["action plan"]},
+  {"question": "What is the deadline for submitting public comments on this draft?", "expected_pages": [2, 6], "must_mention": ["November 4"]},
+  {"question": "Which new Category was added to the Identify Function to emphasize continuous improvement?", "expected_pages": [4, 44], "must_mention": ["Improvement"]},
+  {"question": "What is C-SCRM?", "expected_pages": [25, 26], "must_mention": ["supply chain"]},
+  {"question": "What does GV.RM-02 cover?", "expected_pages": [40], "must_mention": ["appetite"]},
+  {"question": "What happened to ID.SC-03 in CSF 2.0?", "expected_pages": [41, 44], "must_mention": ["GV.SC-05"]},
+  {"question": "What does PR.DS-11 say about backups?", "expected_pages": [47], "must_mention": ["tested"]},
+  {"question": "Who is the primary audience for the Framework?", "expected_pages": [12], "must_mention": ["cybersecurity program"]},
+  {"question": "When was version 1.1 of the Framework published?", "expected_pages": [13], "must_mention": ["2018"]},
+  {"question": "How many written responses were received to the January 2023 CSF 2.0 Concept Paper?", "expected_pages": [3], "must_mention": ["92"]},
+  {"question": "What does RC.RP-03 require before restoring from backups?", "expected_pages": [52], "must_mention": ["integrity"]},
+  {"question": "Which Privacy Framework Functions help manage privacy risks unrelated to cybersecurity incidents?", "expected_pages": [28], "must_mention": ["Control-P"]},
+  {"question": "When was this draft withdrawn?", "expected_pages": [1], "must_mention": ["February 26, 2024"]},
+
+  {"question": "What is the best pizza recipe?", "expected_pages": [], "must_mention": []},
+  {"question": "Who won the 2022 FIFA World Cup?", "expected_pages": [], "must_mention": []},
+  {"question": "How do I configure a firewall on a Cisco router?", "expected_pages": [], "must_mention": []},
+  {"question": "What is the maximum GDPR fine for a data breach?", "expected_pages": [], "must_mention": []}
+]

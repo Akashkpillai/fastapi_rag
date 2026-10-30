@@ -1,0 +1,555 @@
+[
+  {
+    "question": "What are the six Functions of the Framework Core?",
+    "expected_pages": [
+      14,
+      38
+    ],
+    "must_mention": [
+      "GOVERN",
+      "IDENTIFY",
+      "PROTECT",
+      "DETECT",
+      "RESPOND",
+      "RECOVER"
+    ],
+    "retrieved_pages": [
+      14,
+      38,
+      13,
+      15,
+      17
+    ],
+    "top_score": 0.7492,
+    "rank": 1,
+    "answer": "The six Functions are: GOVERN, IDENTIFY, PROTECT, DETECT, RESPOND, and RECOVER.",
+    "cited_pages": [
+      14,
+      15,
+      38
+    ],
+    "cites_expected_page": true,
+    "mentions_all": true,
+    "correct": true
+  },
+  {
+    "question": "What does GV.SC-05 require?",
+    "expected_pages": [
+      41
+    ],
+    "must_mention": [
+      "contracts"
+    ],
+    "retrieved_pages": [
+      41,
+      26,
+      39,
+      40,
+      26
+    ],
+    "top_score": 0.7089,
+    "rank": 1,
+    "answer": "GV.SC-05 requires that requirements to address cybersecurity risks in supply chains are established, prioritized, and integrated into contracts and other types of agreements with suppliers and other relevant third parties.",
+    "cited_pages": [
+      41
+    ],
+    "cites_expected_page": true,
+    "mentions_all": true,
+    "correct": true
+  },
+  {
+    "question": "What are the four Framework Tiers?",
+    "expected_pages": [
+      22,
+      35,
+      36
+    ],
+    "must_mention": [
+      "Partial",
+      "Risk Informed",
+      "Repeatable",
+      "Adaptive"
+    ],
+    "retrieved_pages": [
+      22,
+      23,
+      13,
+      17,
+      35
+    ],
+    "top_score": 0.6876,
+    "rank": 1,
+    "answer": "The four Framework Tiers are:\n- Tier 1 \u2014 Partial\n- Tier 2 \u2014 Risk Informed\n- Tier 3 \u2014 Repeatable\n- Tier 4 \u2014 Adaptive",
+    "cited_pages": [
+      22,
+      23,
+      35
+    ],
+    "cites_expected_page": true,
+    "mentions_all": true,
+    "correct": true
+  },
+  {
+    "question": "What is the difference between a Current Profile and a Target Profile?",
+    "expected_pages": [
+      18
+    ],
+    "must_mention": [
+      "Current Profile",
+      "Target Profile"
+    ],
+    "retrieved_pages": [
+      18,
+      21,
+      20,
+      32,
+      27
+    ],
+    "top_score": 0.713,
+    "rank": 1,
+    "answer": "- Current Profile: Describes the Core outcomes an organization is currently achieving (or attempting to achieve) and characterizes how or to what extent each outcome is being achieved.\n- Target Profile: Describes the desired outcomes the organization selects and prioritizes from the Core to meet its cybersecurity risk-management objectives; it accounts for anticipated changes (for example, new requirements, new technology adoption, and threat-intelligence trends). \n\n(Organizations may choose to develop a Current Profile first or start with a Target Profile.)",
+    "cited_pages": [
+      18
+    ],
+    "cites_expected_page": true,
+    "mentions_all": true,
+    "correct": true
+  },
+  {
+    "question": "What is a Community Profile?",
+    "expected_pages": [
+      18
+    ],
+    "must_mention": [
+      "Target Profile"
+    ],
+    "retrieved_pages": [
+      18,
+      17,
+      20,
+      20,
+      19
+    ],
+    "top_score": 0.6906,
+    "rank": 1,
+    "answer": "A Community Profile is a Target Profile created to address shared interests and goals among a group of organizations. It can serve as the basis for organizations\u2019 own Target Profiles, may be developed for a sector, subsector, specific use case, or technology, and can be developed collaboratively or by one organization for others to use.",
+    "cited_pages": [
+      18
+    ],
+    "cites_expected_page": true,
+    "mentions_all": true,
+    "correct": true
+  },
+  {
+    "question": "What are the steps for creating and using Framework Profiles?",
+    "expected_pages": [
+      19,
+      20
+    ],
+    "must_mention": [
+      "action plan"
+    ],
+    "retrieved_pages": [
+      19,
+      20,
+      17,
+      32,
+      21
+    ],
+    "top_score": 0.7712,
+    "rank": 1,
+    "answer": "The excerpts list these steps (from Section 3.1.2) for creating and using Framework Profiles:\n\n1. Define the use case for the Profiles \u2014 scope the Profiles by stating the reason for creating them, what divisions/assets/services are in scope, who will develop/review/operationalize them, and who will set expectations for achieving the outcomes. (Step 1)\n\n2. Gather the information needed to prepare the Profiles \u2014 collect organizational policies, risk-management priorities and resources, applicable standards and requirements, work roles, and governance information (e.g., mission, stakeholders, needs) needed for a Target Profile. (Step 2)\n\n3. Create Current and Target Profiles \u2014 choose what supporting elements to include for each selected Framework outcome (e.g., priority, current status, policies/processes, practices/tools/responsibilities, metrics, informative references) and fill those elements in for both Current and Target Profiles; Appendix A provides a notional template. (Step 3)\n\n4. Analyze the Profiles and create an action plan \u2014 use the analysis to prioritize gaps and plan actions to move from Current to Target Profiles. (Step 4)\n\nAdditional guidance in the excerpts: repeat these steps as often as needed for continual improvement; engage stakeholders across the organization when developing Profiles; and organizations may develop multiple Profiles for different use cases or scopes (enterprise, business units, critical systems, products/services).",
+    "cited_pages": [
+      19,
+      20,
+      21,
+      32
+    ],
+    "cites_expected_page": true,
+    "mentions_all": true,
+    "correct": true
+  },
+  {
+    "question": "What is the deadline for submitting public comments on this draft?",
+    "expected_pages": [
+      2,
+      6
+    ],
+    "must_mention": [
+      "November 4"
+    ],
+    "retrieved_pages": [
+      1,
+      2,
+      34,
+      5,
+      2
+    ],
+    "top_score": 0.634,
+    "rank": 2,
+    "answer": "The deadline for submitting public comments was Friday, November 4, 2023.",
+    "cited_pages": [
+      2
+    ],
+    "cites_expected_page": true,
+    "mentions_all": true,
+    "correct": true
+  },
+  {
+    "question": "Which new Category was added to the Identify Function to emphasize continuous improvement?",
+    "expected_pages": [
+      4,
+      44
+    ],
+    "must_mention": [
+      "Improvement"
+    ],
+    "retrieved_pages": [
+      32,
+      44,
+      4,
+      38,
+      32
+    ],
+    "top_score": 0.6376,
+    "rank": 2,
+    "answer": "The new Category is Improvement (ID.IM) \u2014 the \"Improvement\" Category in the Identify function.",
+    "cited_pages": [
+      4,
+      38,
+      44
+    ],
+    "cites_expected_page": true,
+    "mentions_all": true,
+    "correct": true
+  },
+  {
+    "question": "What is C-SCRM?",
+    "expected_pages": [
+      25,
+      26
+    ],
+    "must_mention": [
+      "supply chain"
+    ],
+    "retrieved_pages": [
+      25,
+      26,
+      27,
+      41,
+      38
+    ],
+    "top_score": 0.6594,
+    "rank": 1,
+    "answer": "C-SCRM stands for Cybersecurity Supply Chain Risk Management. It is a systematic process for managing exposure to cybersecurity risk throughout supply chains and for developing appropriate response strategies, policies, processes, and procedures. It also aims to extend first-party cybersecurity risk management considerations to third parties, supply chains, and acquired products and services based on supplier criticality and risk assessment.",
+    "cited_pages": [
+      25,
+      26
+    ],
+    "cites_expected_page": true,
+    "mentions_all": true,
+    "correct": true
+  },
+  {
+    "question": "What does GV.RM-02 cover?",
+    "expected_pages": [
+      40
+    ],
+    "must_mention": [
+      "appetite"
+    ],
+    "retrieved_pages": [
+      40,
+      39,
+      41,
+      47,
+      43
+    ],
+    "top_score": 0.6317,
+    "rank": 1,
+    "answer": "GV.RM-02 covers that risk appetite and risk tolerance statements are determined, communicated, and maintained (formerly ID.RM-02, ID.RM-03).",
+    "cited_pages": [
+      40
+    ],
+    "cites_expected_page": true,
+    "mentions_all": true,
+    "correct": true
+  },
+  {
+    "question": "What happened to ID.SC-03 in CSF 2.0?",
+    "expected_pages": [
+      41,
+      44
+    ],
+    "must_mention": [
+      "GV.SC-05"
+    ],
+    "retrieved_pages": [
+      2,
+      2,
+      3,
+      1,
+      38
+    ],
+    "top_score": 0.6989,
+    "rank": null,
+    "answer": "The CSF 2.0 moved the Supply Chain category out of Identify into the Govern function. ID.SC subcategories (including ID.SC-03) were relocated under the new Cybersecurity Supply Chain Risk Management category (GV.SC) and thus would be renumbered/represented under GV.SC in CSF 2.0.",
+    "cited_pages": [
+      38
+    ],
+    "cites_expected_page": false,
+    "mentions_all": false,
+    "correct": false
+  },
+  {
+    "question": "What does PR.DS-11 say about backups?",
+    "expected_pages": [
+      47
+    ],
+    "must_mention": [
+      "tested"
+    ],
+    "retrieved_pages": [
+      47,
+      48,
+      46,
+      45,
+      52
+    ],
+    "top_score": 0.6813,
+    "rank": 1,
+    "answer": "PR.DS-11: Backups of data are created, protected, maintained, and tested (formerly PR.IP-04).",
+    "cited_pages": [
+      47
+    ],
+    "cites_expected_page": true,
+    "mentions_all": true,
+    "correct": true
+  },
+  {
+    "question": "Who is the primary audience for the Framework?",
+    "expected_pages": [
+      12
+    ],
+    "must_mention": [
+      "cybersecurity program"
+    ],
+    "retrieved_pages": [
+      13,
+      12,
+      2,
+      17,
+      23
+    ],
+    "top_score": 0.5974,
+    "rank": 2,
+    "answer": "The primary audience is those responsible for developing and leading a cybersecurity program.",
+    "cited_pages": [
+      12
+    ],
+    "cites_expected_page": true,
+    "mentions_all": true,
+    "correct": true
+  },
+  {
+    "question": "When was version 1.1 of the Framework published?",
+    "expected_pages": [
+      13
+    ],
+    "must_mention": [
+      "2018"
+    ],
+    "retrieved_pages": [
+      13,
+      3,
+      2,
+      2,
+      13
+    ],
+    "top_score": 0.7567,
+    "rank": 1,
+    "answer": "Version 1.1 of the Framework was published in 2018.",
+    "cited_pages": [
+      13
+    ],
+    "cites_expected_page": true,
+    "mentions_all": true,
+    "correct": true
+  },
+  {
+    "question": "How many written responses were received to the January 2023 CSF 2.0 Concept Paper?",
+    "expected_pages": [
+      3
+    ],
+    "must_mention": [
+      "92"
+    ],
+    "retrieved_pages": [
+      2,
+      3,
+      2,
+      10,
+      1
+    ],
+    "top_score": 0.6891,
+    "rank": 2,
+    "answer": "92 written responses.",
+    "cited_pages": [
+      3
+    ],
+    "cites_expected_page": true,
+    "mentions_all": true,
+    "correct": true
+  },
+  {
+    "question": "What does RC.RP-03 require before restoring from backups?",
+    "expected_pages": [
+      52
+    ],
+    "must_mention": [
+      "integrity"
+    ],
+    "retrieved_pages": [
+      52,
+      53,
+      9,
+      48,
+      47
+    ],
+    "top_score": 0.7144,
+    "rank": 1,
+    "answer": "RC.RP-03 requires verifying the integrity of backups and other restoration assets before using them for restoration.",
+    "cited_pages": [
+      52
+    ],
+    "cites_expected_page": true,
+    "mentions_all": true,
+    "correct": true
+  },
+  {
+    "question": "Which Privacy Framework Functions help manage privacy risks unrelated to cybersecurity incidents?",
+    "expected_pages": [
+      28
+    ],
+    "must_mention": [
+      "Control-P"
+    ],
+    "retrieved_pages": [
+      28,
+      29,
+      28,
+      15,
+      11
+    ],
+    "top_score": 0.8384,
+    "rank": 1,
+    "answer": "The Privacy Framework functions Identify-P, Govern-P, Control-P, and Communicate-P.",
+    "cited_pages": [
+      28
+    ],
+    "cites_expected_page": true,
+    "mentions_all": true,
+    "correct": true
+  },
+  {
+    "question": "When was this draft withdrawn?",
+    "expected_pages": [
+      1
+    ],
+    "must_mention": [
+      "February 26, 2024"
+    ],
+    "retrieved_pages": [
+      1,
+      2,
+      5,
+      34,
+      2
+    ],
+    "top_score": 0.7647,
+    "rank": 1,
+    "answer": "The draft was withdrawn on February 26, 2024.",
+    "cited_pages": [
+      1
+    ],
+    "cites_expected_page": true,
+    "mentions_all": true,
+    "correct": true
+  },
+  {
+    "question": "What is the best pizza recipe?",
+    "expected_pages": [],
+    "must_mention": [],
+    "retrieved_pages": [
+      53,
+      6,
+      2,
+      33,
+      44
+    ],
+    "top_score": 0.3995,
+    "rank": null,
+    "answer": "I couldn't find anything about that in the document.",
+    "cited_pages": [],
+    "cites_expected_page": null,
+    "mentions_all": null,
+    "correct": true
+  },
+  {
+    "question": "Who won the 2022 FIFA World Cup?",
+    "expected_pages": [],
+    "must_mention": [],
+    "retrieved_pages": [
+      3,
+      1,
+      3,
+      39,
+      32
+    ],
+    "top_score": 0.465,
+    "rank": null,
+    "answer": "I couldn't find anything about that in the document.",
+    "cited_pages": [],
+    "cites_expected_page": null,
+    "mentions_all": null,
+    "correct": true
+  },
+  {
+    "question": "How do I configure a firewall on a Cisco router?",
+    "expected_pages": [],
+    "must_mention": [],
+    "retrieved_pages": [
+      6,
+      19,
+      4,
+      39,
+      48
+    ],
+    "top_score": 0.5535,
+    "rank": null,
+    "answer": "I don\u2019t know. The provided excerpts do not include any instructions for configuring a firewall on a Cisco router. Please provide excerpts that cover firewall configuration or ask again with a source that contains that information.",
+    "cited_pages": [],
+    "cites_expected_page": null,
+    "mentions_all": null,
+    "correct": true
+  },
+  {
+    "question": "What is the maximum GDPR fine for a data breach?",
+    "expected_pages": [],
+    "must_mention": [],
+    "retrieved_pages": [
+      47,
+      46,
+      28,
+      45,
+      29
+    ],
+    "top_score": 0.6279,
+    "rank": null,
+    "answer": "I don\u2019t know \u2014 the provided excerpts do not state the maximum GDPR fine for a data breach.",
+    "cited_pages": [],
+    "cites_expected_page": null,
+    "mentions_all": null,
+    "correct": true
+  }
+]
