@@ -1,0 +1,36 @@
+services:
+  db:
+    image: pgvector/pgvector:pg17  # PostgreSQL 17 with the pgvector extension already installed
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    ports:
+      - "${POSTGRES_PORT}:5432"  # 5434 on the laptop, so it doesn't clash with your local PostgreSQL on 5432/5433
+    volumes:
+      - pgdata:/var/lib/postgresql/data  # keeps the data when the container is removed
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    restart: unless-stopped
+
+  app:
+    build: .
+    env_file: .env
+    environment:
+      # Inside Docker the database is reached by its service name, on its internal port
+      DATABASE_URL: postgresql+psycopg://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB}
+    ports:
+      - "8000:8000"
+    volumes:
+      - models:/models  # caches the embedding model so it downloads only once
+    depends_on:
+      db:
+        condition: service_healthy  # wait until PostgreSQL accepts connections
+    restart: unless-stopped
+
+volumes:
+  pgdata:
+  models:

@@ -15,6 +15,12 @@ class UploadSummary(BaseModel):
     empty_pages: list[int]  # viewer page numbers that had no extractable text
     chunk_count : int
 
+class DocumentInfo(BaseModel):
+    document_id: str
+    filename: str
+    page_count: int
+    chunk_count: int
+
 class Chunk(BaseModel):
     chunk_id: str           # unique: "<page_id>-c0", "<page_id>-c1", ...
     document_id: str

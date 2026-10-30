@@ -1,10 +1,14 @@
 import io
 import logging
+import re
 from pypdf import PdfReader
 
 from app.schemas.document import PageContent
 
 logger = logging.getLogger(__name__)
+
+# Table-of-contents dot leaders ("Introduction ........ 2") add hundreds of useless tokens
+DOT_LEADER = re.compile(r"(?:\s*\.){4,}")
 
 
 
@@ -45,7 +49,7 @@ def parse_pdf(data: bytes, document_id: str) -> list[PageContent]:
                 page_id=f"{document_id}-p{page_number}",
                 page_number=page_number,
                 page_label=labels[index] if labels else None,
-                text=text.strip(),
+                text=DOT_LEADER.sub(" ", text).strip(),
             )
         )
     return pages

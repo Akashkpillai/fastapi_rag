@@ -2,8 +2,9 @@ import re
 
 from app.schemas.document import Chunk, PageContent
 
-MIN_WORDS = 300
-MAX_WORDS = 500
+# Prose is ~1.35 tokens per word, so 350 words stays under the embedding model's 512-token limit
+MIN_WORDS = 200
+MAX_WORDS = 350
 OVERLAP_WORDS = 50
 
 WORD = re.compile(r"\S+\s*")                          # a word plus the whitespace after it

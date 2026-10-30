@@ -1,27 +1,42 @@
+import logging
 import uuid
+from typing import Annotated
 
-from fastapi import APIRouter, HTTPException, UploadFile
+from fastapi import APIRouter, Depends, HTTPException, UploadFile
 from fastapi.concurrency import run_in_threadpool
+from sqlalchemy.orm import Session
 
-# from app.db.repository import save_document
-from app.schemas.document import UploadSummary
-from app.services.pdf_parser import InvalidPDFError, parse_pdf
+from app.db.repository import count_chunks, get_document, save_document
+from app.db.session import get_session
+from app.schemas.document import DocumentInfo, UploadSummary
 from app.services.chunker import chunk_pages
+from app.services.embeddings import embed_texts
+from app.services.pdf_parser import InvalidPDFError, parse_pdf
+
+logger = logging.getLogger(__name__)
 
 router = APIRouter(prefix="/document", tags=["documents"])
 
 MAX_UPLOAD_BYTES = 20 * 1024 * 1024  # 20 MB
 
-@router.get("/{document_id}")
-def one_document(document_id:int):
-    return document_id
+@router.get("/{document_id}", response_model=DocumentInfo)
+def one_document(document_id: str, session: Annotated[Session, Depends(get_session)]):
+    document = get_document(session, document_id)
+    if document is None:
+        raise HTTPException(status_code=404, detail="Document not found")
+    return DocumentInfo(
+        document_id=document.id,
+        filename=document.filename,
+        page_count=document.page_count,
+        chunk_count=count_chunks(session, document_id),
+    )
 
 @router.get("/")
 def document(limit: int = 5):
     return limit
 
 @router.post("/upload", response_model=UploadSummary, status_code=201)
-async def upload(file: UploadFile):
+async def upload(file: UploadFile, session: Annotated[Session, Depends(get_session)]):
     # Check 1: what the client *says* the file is (easy to fake)
     if file.content_type != "application/pdf":
         raise HTTPException(status_code=415, detail="Only PDF files are accepted")
@@ -54,8 +69,15 @@ async def upload(file: UploadFile):
         )
 
     filename = file.filename or "unnamed.pdf"
-    # save_document(document_id, filename, usable_pages)
-    chunks = chunk_pages(document_id,usable_pages)
+    chunks = chunk_pages(document_id, usable_pages)
+    embeddings = await run_in_threadpool(embed_texts, [chunk.text for chunk in chunks])
+    save_document(session, document_id, filename, len(pages), chunks, embeddings)
+
+    # Report what the database actually holds, not what we meant to save
+    stored = count_chunks(session, document_id)
+    if stored != len(chunks):
+        logger.error("Document %s: created %d chunks but stored %d", document_id, len(chunks), stored)
+        raise HTTPException(status_code=500, detail="The document was not fully saved")
 
     return UploadSummary(
         document_id=document_id,
@@ -63,5 +85,5 @@ async def upload(file: UploadFile):
         page_count=len(pages),
         pages_with_text=len(usable_pages),
         empty_pages=empty_pages,
-        chunk_count=len(chunks)
+        chunk_count=stored,
     )
