@@ -38,8 +38,9 @@ def question(request: QuestionRequest, session: Annotated[Session, Depends(get_s
     check_document_exists(session, request.document_id)
     chunks = retrieve(session, request.question, request.top_k, request.document_id)
 
-    # Weak matches would only tempt the model to answer from unrelated text, so skip the call
-    relevant = [chunk for chunk in chunks if chunk.score >= MIN_SCORE]
+    # Weak matches would only tempt the model to answer from unrelated text, so skip the call.
+    # Exact ID matches always count: the question named something this chunk contains.
+    relevant = [chunk for chunk in chunks if chunk.exact_match or chunk.score >= MIN_SCORE]
     if not relevant:
         return AnswerResponse(answer=NOT_FOUND_ANSWER, cited_pages=[])
 

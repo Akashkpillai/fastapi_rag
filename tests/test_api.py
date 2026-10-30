@@ -1,10 +1,12 @@
 """Endpoint tests that need neither the database nor OpenAI: those parts are replaced with fakes."""
+from types import SimpleNamespace
+
 import httpx
 import openai
 import pytest
 from fastapi.testclient import TestClient
 
-from app.api.routes import chat
+from app.api.routes import chat, documents
 from app.api.routes.documents import MAX_UPLOAD_BYTES
 from app.db.session import get_session
 from app.main import app
@@ -57,6 +59,37 @@ def test_health(client):
     assert client.get("/health").json() == {"status": "ok"}
 
 
+def test_chat_page_is_served(client):
+    response = client.get("/")
+    assert response.status_code == 200
+    assert "<title>PDF Assistant</title>" in response.text
+    assert client.get("/static/app.js").status_code == 200
+
+
+# --- document list / delete ---
+
+def test_lists_documents(client, monkeypatch):
+    stored = SimpleNamespace(id="abc", filename="a.pdf", page_count=3)
+    monkeypatch.setattr(documents, "list_documents", lambda session: [(stored, 7)])
+    assert client.get("/document/").json() == [
+        {"document_id": "abc", "filename": "a.pdf", "page_count": 3, "chunk_count": 7}
+    ]
+
+
+def test_delete_document(client, monkeypatch):
+    deleted = []
+    monkeypatch.setattr(documents, "get_document", lambda session, document_id: document_id)
+    monkeypatch.setattr(documents, "delete_document", lambda session, document: deleted.append(document))
+
+    assert client.delete("/document/abc").status_code == 204
+    assert deleted == ["abc"]
+
+
+def test_delete_unknown_document_is_404(client, monkeypatch):
+    monkeypatch.setattr(documents, "get_document", lambda session, document_id: None)
+    assert client.delete("/document/missing").status_code == 404
+
+
 # --- upload checks ---
 
 def test_upload_rejects_non_pdf_content_type(client):
@@ -103,7 +136,7 @@ def test_weak_matches_skip_the_llm(client, fake_pipeline):
     sent = fake_pipeline([chunk(1, 0.43), chunk(2, 0.40)])
     response = client.post("/question", json={"question": "best pizza recipe"})
 
-    assert response.json() == {"answer": chat.NOT_FOUND_ANSWER, "cited_pages": []}
+    assert response.json() == {"answer": chat.NOT_FOUND_ANSWER, "cited_pages": [], "sources": []}
     assert sent == []  # OpenAI was never called
 
 
@@ -114,6 +147,13 @@ def test_only_strong_matches_reach_the_llm(client, fake_pipeline):
 
     assert response.json() == answer.model_dump()
     assert [c.page_number for c in sent[0]] == [41, 40]
+
+
+def test_exact_id_match_reaches_the_llm_even_with_a_low_score(client, fake_pipeline):
+    exact = chunk(44, 0.45).model_copy(update={"exact_match": True})
+    sent = fake_pipeline([exact, chunk(2, 0.41)], answer=AnswerResponse(answer="ok", cited_pages=[44]))
+    client.post("/question", json={"question": "What happened to ID.SC-03?"})
+    assert [c.page_number for c in sent[0]] == [44]
 
 
 def test_missing_api_key_is_503(client, fake_pipeline):

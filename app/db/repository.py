@@ -1,4 +1,4 @@
-from sqlalchemy import func, select, text
+from sqlalchemy import func, or_, select, text
 from sqlalchemy.orm import Session
 
 from app.db.models import ChunkRecord, DocumentRecord
@@ -52,3 +52,37 @@ def search_chunks(
         session.execute(text("SET LOCAL hnsw.iterative_scan = strict_order"))
 
     return [(chunk, 1 - distance) for chunk, distance in session.execute(query)]
+
+
+def search_chunks_containing(
+    session: Session,
+    query_embedding: list[float],
+    terms: list[str],
+    limit: int,
+    document_id: str | None = None,
+) -> list[tuple[ChunkRecord, float]]:
+    # Chunks that contain any of the exact terms, most similar first. ILIKE scans every chunk,
+    # which is fine for a few thousand; a pg_trgm index would keep it fast beyond that.
+    distance = ChunkRecord.embedding.cosine_distance(query_embedding)
+    contains_term = [ChunkRecord.text.icontains(term, autoescape=True) for term in terms]
+    query = select(ChunkRecord, distance).where(or_(*contains_term)).order_by(distance).limit(limit)
+    if document_id is not None:
+        query = query.where(ChunkRecord.document_id == document_id)
+    return [(chunk, 1 - distance) for chunk, distance in session.execute(query)]
+
+
+def list_documents(session: Session) -> list[tuple[DocumentRecord, int]]:
+    # Each document with its chunk count, newest first, in a single query
+    chunk_count = (
+        select(func.count())
+        .where(ChunkRecord.document_id == DocumentRecord.id)
+        .correlate(DocumentRecord)
+        .scalar_subquery()
+    )
+    query = select(DocumentRecord, chunk_count).order_by(DocumentRecord.created_at.desc())
+    return list(session.execute(query))  # rows unpack as (document, chunk_count)
+
+
+def delete_document(session: Session, document: DocumentRecord) -> None:
+    session.delete(document)  # its chunks go too (cascade="all, delete-orphan")
+    session.commit()

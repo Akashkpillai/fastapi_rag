@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PDF Assistant</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%233b5bdb' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z'/%3E%3Cpath d='M14 2v6h6M8 13h8M8 17h5'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/static/styles.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg>
+        <span>PDF Assistant</span>
+      </div>
+
+      <label class="dropzone" id="dropzone">
+        <input type="file" id="file-input" accept="application/pdf,.pdf" hidden>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16V4M7 9l5-5 5 5M4 16v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3"/></svg>
+        <strong>Upload a PDF</strong>
+        <span>Drop it here or click to browse · up to 20 MB</span>
+      </label>
+      <p class="upload-status" id="upload-status" role="status" hidden></p>
+
+      <h2 class="section-title">Documents</h2>
+      <ul class="doc-list" id="doc-list"></ul>
+    </aside>
+
+    <main class="chat">
+      <header class="chat-header">
+        <span class="scope-label">Asking</span>
+        <span class="scope-name" id="scope-name">All documents</span>
+      </header>
+
+      <div class="messages" id="messages" aria-live="polite">
+        <div class="empty" id="empty-state">
+          <h1>Ask your documents</h1>
+          <p>Upload a PDF, pick it on the left, and ask a question. Every answer shows the pages it came from.</p>
+          <div class="suggestions" id="suggestions">
+            <button type="button">Summarize the main purpose of this document</button>
+            <button type="button">What are the six Functions of the Framework Core?</button>
+            <button type="button">What does GV.SC-05 require?</button>
+          </div>
+        </div>
+      </div>
+
+      <form class="composer" id="composer">
+        <textarea id="question" rows="1" placeholder="Ask a question…" aria-label="Your question" required></textarea>
+        <button type="submit" id="send" aria-label="Send question">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </button>
+      </form>
+    </main>
+  </div>
+</body>
+</html>

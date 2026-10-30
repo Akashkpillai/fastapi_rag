@@ -22,11 +22,40 @@
     ],
     "top_score": 0.7492,
     "rank": 1,
-    "answer": "The six Functions are: GOVERN, IDENTIFY, PROTECT, DETECT, RESPOND, and RECOVER.",
+    "answer": "The six Functions are: **GOVERN**, **IDENTIFY**, **PROTECT**, **DETECT**, **RESPOND**, and **RECOVER**.\n\n- **GOVERN (GV)** \u2013 establish and monitor the organization\u2019s cybersecurity risk management strategy, expectations, and policy.\n- **IDENTIFY (ID)** \u2013 determine current cybersecurity risk by understanding assets and related risks.\n- **PROTECT (PR)** \u2013 implement safeguards to prevent or reduce cybersecurity risk.\n- **DETECT (DE)** \u2013 find and analyze possible cybersecurity attacks and compromises.\n- **RESPOND (RS)** \u2013 take action to contain and address detected cybersecurity incidents.\n- **RECOVER (RC)** \u2013 restore assets and operations impacted by cybersecurity incidents.",
     "cited_pages": [
       14,
       15,
       38
+    ],
+    "sources": [
+      {
+        "chunk_id": "5eb419a15593476086e151f92fade889-p14-c0",
+        "document_id": "5eb419a15593476086e151f92fade889",
+        "page_number": 14,
+        "page_label": null,
+        "text": "Initial Public Draft The NIST Cybersecurity Framework 2.0 \n  5 \norder of Functions, Categories, and Subcategories in the Core is not intended to imply the 181 \nsequence by which they should be implemented or their relative importance. The ordering of the 182 \nCore is intended to resonate most with those charged with operationalizing risk management 183 \nwithin an organization. 184 \nThis section explains the basics of the Framework Core. See Appendix C for the Framework 185 \nCore\u2019s descriptions of the Functions, Categories, and Subcategories. 186 \n 187 \nFig. 1. Cybersecurity Framework Core 188 \n Functions, Categories, and Subcategories  189 \nThe Framework Core Functions \u2014 GOVERN, IDENTIFY, PROTECT, DETECT, RESPOND, and 190 \nRECOVER \u2014 organize cybersecurity outcomes at their highest level.   191 \n\u2022 GOVERN (GV) \u2013 Establish and monitor the organization\u2019s cybersecurity risk management 192 \nstrategy, expectations, and policy. The GOVERN Function is cross-cutting and provides 193 \noutcomes to inform how an organization will achieve and prioritize the outcomes of the 194 \nother five Functions in the context of its mission and stakeholder expectations. 195 \nGovernance activities are critical for incorporating cybersecurity into an organization\u2019s 196 \nbroader enterprise risk management strategy. GOVERN directs an understanding of 197 \norganizational context; the establishment of cybersecurity strategy and cybersecurity 198 \nsupply chain risk management; roles, responsibilities, and authorities; policies, processes, 199 \nand procedures; and the oversight of cybersecurity strategy.  200 \n\u2022 IDENTIFY (ID) \u2013 Help determine the current cybersecurity risk to the organization. 201 \nUnderstanding its assets (e.g., data, hardware, software, systems, facilities, services, 202 \npeople) and the related cybersecurity risks enables an organization to focus and prioritize 203 \nits efforts in a manner consistent with its risk management strategy and the mission needs 204 \nidentified under GOVERN. This Function also includes the identification of improvements 205 \nneeded for the organization\u2019s policies, processes, procedures, and practices supporting 206 \ncybersecurity risk management to inform efforts under all six Functions. 207",
+        "score": 0.7492,
+        "exact_match": false
+      },
+      {
+        "chunk_id": "5eb419a15593476086e151f92fade889-p38-c0",
+        "document_id": "5eb419a15593476086e151f92fade889",
+        "page_number": 38,
+        "page_label": null,
+        "text": "Public Draft  The NIST Cybersecurity Framework 2.0 \n \n  29 \nAppendix C. Framework Core 815 \nThis section presents the Functions, Categories, and Subcategories of the Framework Core. The 816 \nImplementation Examples and Informative References of the Core will be maintained online on 817 \nthe NIST Cybersecurity Framework website to allow for more frequent updates.  818 \nTable 4 shows the CSF 2.0 Core Function and Category names and unique alphabetic identifiers.  819 \nTable 4. CSF 2.0 Core Function and Category Names and Identifiers 820 \n \nThe remaining tables in this appendix show the CSF 2.0 Core Functions, Categories, and 821 \nSubcategories with one table for each Function. Each table also identifies when a CSF 1.1 822 \nCategory or Subcategory has been moved to one or more CSF 2.0 Subcategories for traceability. 823 \nFunction Category Category Identifier \nGovern (GV) Organizational Context GV.OC \n Risk Management Strategy GV.RM \n Cybersecurity Supply Chain Risk Management GV.SC \n Roles, Responsibilities, and Authorities GV.RR \n Policies, Processes, and Procedures GV.PO \n Oversight GV.OV \nIdentify (ID) Asset Management ID.AM \n Risk Assessment ID.RA \n Improvement ID.IM \nProtect (PR) Identity Management, Authentication, and Access Control PR.AA \n Awareness and Training PR.AT \n Data Security PR.DS \n Platform Security PR.PS \n Technology Infrastructure Resilience PR.IR \nDetect (DE) Continuous Monitoring  DE.CM  \n Adverse Event Analysis  DE.AE  \nRespond (RS) Incident Management RS.MA \n Incident Analysis RS.AN \n Incident Response Reporting and Communication RS.CO \n Incident Mitigation RS.MI \nRecover (RC) Incident Recovery Plan Execution RC.RP \n Incident Recovery Communication RC.CO",
+        "score": 0.7385,
+        "exact_match": false
+      },
+      {
+        "chunk_id": "5eb419a15593476086e151f92fade889-p15-c0",
+        "document_id": "5eb419a15593476086e151f92fade889",
+        "page_number": 15,
+        "page_label": null,
+        "text": "Initial Public Draft The NIST Cybersecurity Framework 2.0 \n  6 \n\u2022 PROTECT (PR) \u2013 Use safeguards to prevent or reduce cybersecurity risk. Once assets and 208 \nrisks are identified and prioritized, PROTECT supports the ability to secure those assets to 209 \nprevent or lower the likelihood and impact of adverse cybersecurity events. Outcomes 210 \ncovered by this Function include awareness and training; data security; identity 211 \nmanagement, authentication, and access control; platform security (i.e., securing the 212 \nhardware, software, and services of physical and virtual platforms); and the resilience of 213 \ntechnology infrastructure.  214 \n\u2022 DETECT (DE) \u2013 Find and analyze possible cybersecurity attacks and compromises. 215 \nDETECT enables timely discovery and analysis of anomalies, indicators of compromise, 216 \nand other potentially adverse cybersecurity events that may indicate that cybersecurity 217 \nattacks and incidents are occurring.  218 \n\u2022 RESPOND (RS) \u2013 Take action regarding a detected cybersecurity incident. RESPOND 219 \nsupports the ability to contain the impact of cybersecurity incidents. Outcomes within this 220 \nFunction cover incident management, analysis, mitigation, reporting, and 221 \ncommunication.  222 \n\u2022 RECOVER (RC) \u2013 Restore assets and operations that were impacted by a cybersecurity 223 \nincident. RECOVER supports timely restoration of normal operations to reduce the impact 224 \nof cybersecurity incidents and enable appropriate communication during recovery efforts.  225 \nFig. 2 shows the CSF Functions as a wheel because all Framework Functions relate to one 226 \nanother. For example, an organization will categorize assets under IDENTIFY and take steps to 227 \nsecure those assets under PROTECT. Investments in planning and testing in the GOVERN and 228 \nIDENTIFY Functions will support timely incident response and recovery actions for cybersecurity 229 \nincidents in the RESPOND and RECOVER Functions. GOVERN is in the center of the wheel because 230 \nit informs how an organization will implement the other five Functions.   231 \n 232 \n 233 \nTo form and maintain a culture that addresses dynamic cybersecurity risk, the Functions should 234 \nbe addressed concurrently. Actions supporting GOVERN, IDENTIFY, PROTECT, and DETECT should 235 \nFig. 2. Framework Functions",
+        "score": 0.6676,
+        "exact_match": false
+      }
     ],
     "cites_expected_page": true,
     "mentions_all": true,
@@ -43,15 +72,26 @@
     "retrieved_pages": [
       41,
       26,
+      26,
       39,
-      40,
-      26
+      40
     ],
     "top_score": 0.7089,
     "rank": 1,
-    "answer": "GV.SC-05 requires that requirements to address cybersecurity risks in supply chains are established, prioritized, and integrated into contracts and other types of agreements with suppliers and other relevant third parties.",
+    "answer": "GV.SC-05 requires that **requirements to address cybersecurity risks in supply chains** be established, prioritized, and integrated into **contracts and other agreements** with suppliers and relevant third parties.",
     "cited_pages": [
       41
+    ],
+    "sources": [
+      {
+        "chunk_id": "5eb419a15593476086e151f92fade889-p41-c0",
+        "document_id": "5eb419a15593476086e151f92fade889",
+        "page_number": 41,
+        "page_label": null,
+        "text": "Table 5. GOVERN (GV): Establish and monitor the organization\u2019s cybersecurity risk management strategy, expectations, and policy\nTable 6. IDENTIFY (ID): Help determine the current cybersecurity risk to the organization \nPublic Draft  The NIST Cybersecurity Framework 2.0 \n \n  32 \nCategory Subcategory \n \nGV.SC-05: Requirements to address cybersecurity risks in supply chains are established, prioritized, and \nintegrated into contracts and other types of agreements with suppliers and other relevant third parties \n(formerly ID.SC-03) \n \nGV.SC-06: Planning and due diligence are performed to reduce risks before entering into formal supplier or \nother third-party relationships \n  \nGV.SC-07: The risks posed by a supplier, their products and services, and other third parties are identified, \nrecorded, prioritized, assessed, responded to, and monitored over the course of the relationship (formerly \nID.SC-02, ID.SC-04) \n \nGV.SC-08: Relevant suppliers and other third parties are included in incident planning, response, and \nrecovery activities (formerly ID.SC-05) \n  \nGV.SC-09: Supply chain security practices are integrated into cybersecurity and enterprise risk management \nprograms, and their performance is monitored throughout the technology product and service life cycle \n \nGV.SC-10: Cybersecurity supply chain risk management plans include provisions for activities that occur \nafter the conclusion of a partnership or service agreement  \nRoles, Responsibilities, and Authorities (GV.RR): \nCybersecurity roles, responsibilities, and authorities to foster \naccountability, performance assessment, and continuous \nimprovement are established and communicated (formerly \nID.GV-02)   \n  \nGV.RR-01: Organizational leadership is responsible and accountable for cybersecurity risk and fosters a \nculture that is risk-aware, ethical, and continually improving \n  \nGV.RR-02: Roles, responsibilities, and authorities related to cybersecurity risk management are established, \ncommunicated, understood, and enforced (formerly ID.AM-06, ID.GV-02, DE.DP-01)  \n  \nGV.RR-03: Adequate resources are allocated commensurate with cybersecurity risk strategy, roles and \nresponsibilities, and policies \n  GV.RR-04: Cybersecurity is included in human resources practices (formerly PR.IP-11)  \nPolicies, Processes, and Procedures (GV.PO): \nOrganizational cybersecurity policies, processes, and \nprocedures are established, communicated, and enforced \n(formerly ID.GV-01)",
+        "score": 0.7089,
+        "exact_match": true
+      }
     ],
     "cites_expected_page": true,
     "mentions_all": true,
@@ -79,11 +119,40 @@
     ],
     "top_score": 0.6876,
     "rank": 1,
-    "answer": "The four Framework Tiers are:\n- Tier 1 \u2014 Partial\n- Tier 2 \u2014 Risk Informed\n- Tier 3 \u2014 Repeatable\n- Tier 4 \u2014 Adaptive",
+    "answer": "The Framework defines four Tiers: **Tier 1 \u2014 Partial**, **Tier 2 \u2014 Risk Informed**, **Tier 3 \u2014 Repeatable**, and **Tier 4 \u2014 Adaptive**.\n\n- **Tier 1 \u2014 Partial**: ad hoc, limited organization-wide awareness and inconsistent risk management.\n- **Tier 2 \u2014 Risk Informed**: management-approved practices, prioritization informed by risk but not yet organization-wide.\n- **Tier 3 \u2014 Repeatable**: established, repeatable processes (progression toward organization-wide rigor).\n- **Tier 4 \u2014 Adaptive**: agile, risk-informed, continuously improving approaches to cybersecurity risk management.",
     "cited_pages": [
       22,
       23,
       35
+    ],
+    "sources": [
+      {
+        "chunk_id": "5eb419a15593476086e151f92fade889-p22-c0",
+        "document_id": "5eb419a15593476086e151f92fade889",
+        "page_number": 22,
+        "page_label": null,
+        "text": "Initial Public Draft The NIST Cybersecurity Framework 2.0 \n  13 \nproject page for more information, including a pointer to the latest version of SP 800-55, 436 \nPerformance Measurement Guide for Information Security. 437 \nThe Framework offers an opportunity to explore or adjust methodologies for measurement and 438 \nassessment.1 For example, key stakeholders could discuss what to include in the organization\u2019s 439 \nCurrent and Target Profiles, such as selected Informative References, roles and responsibilities, 440 \ntools, and policies, processes, procedures, and practices. The stakeholders could also discuss 441 \nwhat assessment and measurement approaches can be used for those topics, and how the 442 \napproaches can provide information to support decisions about the organization\u2019s cybersecurity 443 \nposture.  444 \n Using Framework Tiers to Characterize Cybersecurity Risk Management 445 \nOutcomes  446 \nThe selection of Framework Tiers (Tiers) helps set the overall tone for how cybersecurity risks 447 \nwill be managed within the organization, and determine the effort required to reach a selected 448 \nTier. Organizations can choose to use the Tiers found in Appendix B to inform their Current and 449 \nTarget Profiles. Tiers characterize the rigor of an organization\u2019s cybersecurity risk governance 450 \nand management outcomes, and they provide context on how an organization views 451 \ncybersecurity risks and the processes in place to manage those risks. 452 \n 453 \nFig. 5. Cybersecurity Framework Tiers 454 \nThe Tiers capture an organization\u2019s outcomes over a range, from Partial (Tier 1) to Adaptive 455 \n(Tier 4), as Fig. 5 depicts. They reflect a progression from informal, ad hoc responses to 456 \napproaches that are agile, risk-informed, and continuously improving.  457 \nTiers should be used to complement an organization\u2019s cybersecurity risk management 458 \nmethodology rather than take its place. For example, an organization can use the Tiers to 459 \ncommunicate internally as a benchmark for a more organization-wide approach to managing 460",
+        "score": 0.6876,
+        "exact_match": false
+      },
+      {
+        "chunk_id": "5eb419a15593476086e151f92fade889-p23-c0",
+        "document_id": "5eb419a15593476086e151f92fade889",
+        "page_number": 23,
+        "page_label": null,
+        "text": "Initial Public Draft The NIST Cybersecurity Framework 2.0 \n  14 \ncybersecurity risks as necessary to progress to a higher Tier. Not all organizations need to be at a 461 \nparticular Tier (e.g., Tier 3 or 4). Progression to higher Tiers is encouraged when risks or 462 \nmandates are greater or when a cost-benefit analysis indicates a feasible and cost-effective 463 \nreduction of cybersecurity risks.   464 \nAs Framework Profiles are created or updated, the Tier descriptions (as listed in Appendix B) 465 \ncan be considered for guidance. An organization may want to include Tier values (1 through 4) 466 \nin its Current and Target Profiles. For example, if leadership has determined that the organization 467 \nshould be at Tier 3 (Repeatable), then the Current Profile will reflect how well the Tier 3 468 \ngovernance and management characteristics have been achieved. The Target Profile will reflect 469 \nany additional outcomes needed to fully achieve the Tier 3 description. Selecting Tiers overall or 470 \nat the Function or Category level instead of the Subcategory level will provide a better sense of 471 \nthe organization\u2019s current cybersecurity risk management practices. Alternatively, an 472 \norganization can apply the Tiers exclusively to the GOVERN Function to describe the rigor of the 473 \norganization\u2019s risk management as demonstrated by the risk management strategy, expectations, 474 \nand policy since GOVERN is cross-cutting.  475 \nWhen selecting Tiers, the organization should consider its current risk management practices, 476 \nthreat environment, legal and regulatory requirements, information sharing practices, business 477 \nand mission objectives, supply chain requirements, and organizational constraints, including 478 \nresources. The organization should ensure that the selection and use of Tiers help to meet 479 \norganizational goals, are feasible to implement, and reduce cybersecurity risks to critical assets 480 \nand resources to levels that are acceptable to the organization. 481 \n Improving Communication With Internal and External Stakeholders Using 482 \nthe Framework 483 \nOne of the most common benefits of using the Framework is improving communication 484 \nregarding cybersecurity risks and posture with those inside and outside of an organization.",
+        "score": 0.6778,
+        "exact_match": false
+      },
+      {
+        "chunk_id": "5eb419a15593476086e151f92fade889-p35-c0",
+        "document_id": "5eb419a15593476086e151f92fade889",
+        "page_number": 35,
+        "page_label": null,
+        "text": "Public Draft  The NIST Cybersecurity Framework 2.0 \n \n  26 \nAppendix B.  Framework Tier Descriptions 811 \nTable 3 describes the Framework Tiers discussed in Section 3.2. The Tiers characterize the typical rigor of the cybersecurity risk 812 \ngovernance and management practices throughout an organization, including third-party cybersecurity risks. 813 \nTable 3. Framework Tiers 814 \nTier Cybersecurity Risk Governance Cybersecurity Risk Management Third-Party Cybersecurity Risks \nTier 1: \nPartial  \nApplication of organizational \ncybersecurity risk strategy is managed in \nan ad hoc manner.  \nPrioritization is ad hoc and not formally \nbased on objectives or threat \nenvironment.  \nThere is limited awareness of cybersecurity \nrisks at the organizational level.   \nThe organization implements cybersecurity \nrisk management on an irregular, case-by-\ncase basis.   \nThe organization may not have processes \nthat enable cybersecurity information to be \nshared within the organization.   \nThe organization is generally unaware of \nthe cybersecurity risks of the products \nand services it provides and uses.  \nThe organization does not understand its \nrole in the larger ecosystem with respect \nto either its dependencies or dependents. \nThe organization has not formalized its \ncapabilities to internally manage \ncybersecurity risks in its supply chains or \nwith its partners and may do these \nactivities in a one-off manner.  \nTier 2: Risk \nInformed  \nRisk management practices are \napproved by management but may not \nbe established as organizational-wide \npolicy.   \nPrioritization of cybersecurity activities \nand protection needs is directly informed \nby organizational risk objectives, the \nthreat environment, or business/mission \nrequirements.   \nThere is an awareness of cybersecurity \nrisks at the organizational level, but an \norganization-wide approach to managing \ncybersecurity risks has not been \nestablished.   \nConsideration of cybersecurity in \norganizational objectives and programs \nmay occur at some but not all levels of the \norganization. Cyber risk assessment of \norganizational and external assets occurs, \nbut is not typically repeatable or \nreoccurring.  \nCybersecurity information is shared within \nthe organization on an informal basis.    \nThe organization understands the \ncybersecurity risks in its supply chains \nthat are associated with the products and \nservices that either support the business \nand mission functions of the organization \nor are utilized in the organization\u2019s \nproducts or services.",
+        "score": 0.6575,
+        "exact_match": false
+      }
     ],
     "cites_expected_page": true,
     "mentions_all": true,
@@ -107,9 +176,60 @@
     ],
     "top_score": 0.713,
     "rank": 1,
-    "answer": "- Current Profile: Describes the Core outcomes an organization is currently achieving (or attempting to achieve) and characterizes how or to what extent each outcome is being achieved.\n- Target Profile: Describes the desired outcomes the organization selects and prioritizes from the Core to meet its cybersecurity risk-management objectives; it accounts for anticipated changes (for example, new requirements, new technology adoption, and threat-intelligence trends). \n\n(Organizations may choose to develop a Current Profile first or start with a Target Profile.)",
+    "answer": "A Current Profile records which Core outcomes an organization is currently achieving (or attempting to achieve) and the extent to which they are achieved; a Target Profile records the desired and prioritized Core outcomes the organization intends to achieve, taking into account anticipated changes such as new requirements, technology adoption, and threat trends.\n\n- **Current Profile**: Describes the organization\u2019s present outcome posture and how/to what extent each selected outcome is being achieved (used for assessing current state and gap analysis).  \n- **Target Profile**: Describes the desired outcomes prioritized from the Core, reflecting future objectives and anticipated changes (used for planning, procurement decisions, and tracking residual risk).  \n- They do not have to contain the same elements and an organization can develop either one first depending on needs.",
     "cited_pages": [
-      18
+      18,
+      20,
+      21,
+      27,
+      32
+    ],
+    "sources": [
+      {
+        "chunk_id": "5eb419a15593476086e151f92fade889-p18-c0",
+        "document_id": "5eb419a15593476086e151f92fade889",
+        "page_number": 18,
+        "page_label": null,
+        "text": "Initial Public Draft The NIST Cybersecurity Framework 2.0 \n  9 \npractices, including those for specific sectors or technologies, as Fig. 3 illustrates. Organizations 308 \nthen can prioritize their actions to achieve specific outcomes and communicate that information 309 \nto internal and external stakeholders. Appendix A provides a notional Profile template.  310 \n 311 \nFig. 3. Cybersecurity Framework Profiles 312 \nThere are two types of Profiles: 313 \n\u2022 A Current Profile covers the Core\u2019s outcomes that an organization is currently achieving 314 \n(or attempting to achieve) and characterizes how or to what extent each outcome is being 315 \nachieved.  316 \n\u2022 A Target Profile covers the desired outcomes that an organization has selected and 317 \nprioritized from the Core for achieving its cybersecurity risk management objectives. A 318 \nTarget Profile takes into account anticipated changes to the organization\u2019s cybersecurity 319 \nposture, such as new requirements, new technology adoption, and cybersecurity threat 320 \nintelligence trends. 321 \nSome organizations prefer to create a Current Profile first \u2014 for example, an organization that 322 \nwants to review its current efforts first and then think about areas for improvement. Others prefer 323 \nto start with a Target Profile to work toward. For example, an organization that needs to meet a 324 \nset of new requirements might focus on developing its Target Profile first and in the course of 325 \ndoing so, also determine its current cybersecurity posture for its Current Profile.  326 \n 327 \nA Community Profile is a Target Profile created to address shared interests and goals among a \ngroup of organizations. Organizations can consider using it as the basis for their own Target \nProfile. An example of a Community Profile is one developed for a sector or subsector, or for \na specific use case or technology. A Community Profile could be developed by organizations \ncollaboratively, or it could be developed by one organization for others to use. Examples of \nCSF 1.1 Community Profiles can be found on the NIST Cybersecurity Framework website, \nwhich NIST will update as new Community Profiles are developed for CSF 2.0.",
+        "score": 0.713,
+        "exact_match": false
+      },
+      {
+        "chunk_id": "5eb419a15593476086e151f92fade889-p21-c0",
+        "document_id": "5eb419a15593476086e151f92fade889",
+        "page_number": 21,
+        "page_label": null,
+        "text": "Initial Public Draft The NIST Cybersecurity Framework 2.0 \n  12 \nrepeating these steps. Given the importance of continual improvement, an organization 397 \ncan repeat the steps as often as needed. 398 \nProfile development can be improved through communication across an organization, including 399 \nbut not limited to key stakeholders from executive leadership, risk management, security, legal, 400 \nhuman resources, acquisition, and operations. For example, Profile developers can reach out to 401 \nleaders within the organization to confirm which resources (e.g., facilities, personnel, systems) 402 \nare most relevant to achieving the objectives (e.g., for a business unit). Those leaders can then 403 \nshare their risk-related expectations for the selected resources with the implementers. By using 404 \nCurrent and Target Profiles, cybersecurity planning and monitoring are tightly tied to 405 \norganizational objectives, and mission-level planners can understand the residual risk of 406 \nuncertainty in terms of likelihood and impact to the mission.  407 \nAn organization may choose to develop multiple Profiles that each address a different use case 408 \nand scope. This can enable better prioritization of activities and outcomes where there may be 409 \ndiffering degrees of cybersecurity risk while still allowing an organization to use the overarching 410 \nFramework structure for consistency across use cases. Examples include describing a 411 \ncybersecurity outcome posture for: 412 \n\u2022 An entire enterprise 413 \n\u2022 Each of an organization\u2019s major business units 414 \n\u2022 Business partners or suppliers 415 \n\u2022 Each of an organization\u2019s most critical systems 416 \n\u2022 Products or services with cybersecurity requirements 417 \n Assessing and Prioritizing Cybersecurity Outcomes With the Framework  418 \nStep 3, \u201cCreate Current and Target Profiles\u201d in Section 3.1 mentions that creating Profiles means 419 \nfilling in the elements for each selected Core outcome. Each organization needs to determine the 420 \nvalues to enter into its own Profiles. The Framework does not prescribe specific standards, 421 \nguidelines, or practices to meet the outcomes. Rather, it gives organizations the flexibility to 422 \nassess their own cybersecurity outcomes in different ways and does not prescribe a single 423 \napproach.",
+        "score": 0.6833,
+        "exact_match": false
+      },
+      {
+        "chunk_id": "5eb419a15593476086e151f92fade889-p20-c0",
+        "document_id": "5eb419a15593476086e151f92fade889",
+        "page_number": 20,
+        "page_label": null,
+        "text": "Initial Public Draft The NIST Cybersecurity Framework 2.0 \n  11 \n1. Define the use case for the Profiles. The use case defines the high-level facts and 355 \nassumptions on which the Profiles will be based, as a way of scoping the Profiles. This 356 \ncan include: 357 \n\u2022 The reason for creating the Profiles  358 \n\u2022 The organization\u2019s divisions, information and technology assets, services, and other 359 \nelements that are in scope for these Profiles  360 \n\u2022 Those who will develop, review, and operationalize the Profiles 361 \n\u2022 The individuals who will set expectations for actions to achieve the cybersecurity 362 \noutcomes 363 \n2. Gather the information needed to prepare the Profiles. An organization can gather 364 \nrelevant resources prior to preparing the Profiles, such as organizational policies, risk 365 \nmanagement priorities and resources, cybersecurity requirements and standards followed 366 \nby the organization, and work roles. Understanding cybersecurity governance \u2014 such as 367 \nidentifying the organization\u2019s mission, its stakeholders, and their needs and expectations, 368 \nas outlined in the GOVERN Function \u2014 is generally needed for preparing a Target Profile.  369 \n3. Create Current and Target Profiles. Determine what types of supporting information 370 \n(also known as elements) each Profile should include for each of the selected Framework 371 \noutcomes, and fill in the elements for each selected outcome. Consider the risk 372 \nimplications of the current state to inform target state planning and prioritization. 373 \nAppendix A provides a notional template for Current and Target Profiles and examples of 374 \ncommon elements that organizations can choose to use. Examples of elements in a Profile 375 \nfor each outcome Category or Subcategory include the outcome\u2019s priority compared to 376 \nother outcomes; current status in achieving the outcome; policies, processes, and 377 \nprocedures; practices, including tools and responsibilities; metrics and measurements; 378 \ninformative references; and any other supporting information that an organization 379 \nconsiders helpful. Organizations documenting responsibilities may employ the 380 \nWorkforce Framework for Cybersecurity (NICE Framework), which provides a common 381 \nlexicon for describing cybersecurity work.   382 \n4. Analyze the Profiles and create an action plan.",
+        "score": 0.6762,
+        "exact_match": false
+      },
+      {
+        "chunk_id": "5eb419a15593476086e151f92fade889-p32-c1",
+        "document_id": "5eb419a15593476086e151f92fade889",
+        "page_number": 32,
+        "page_label": null,
+        "text": "goals and its plans for achieving those goals. 757 \n\u2022 Notes: A space for additional comments on each selected outcome. 758 \nAs the notional template demonstrates, the Current Profile and the Target Profile do not need to 759 \ninclude the same elements. 760 \nTable 1. Notional organizational profile template 761 \n \nSome organizations choose to express the desired outcomes as a series of interim milestones, 762 \nsuch as quarterly, annual, and five-year targets for improvement. In those cases, multiple interim 763 \nTarget Profiles could be included in one table, each describing progress toward defined goals. 764 \nThe following list provides examples of possible elements that could be included within Profiles: 765 \n\u2022 Status: The current state or condition of an outcome, such as whether an organization is 766 \nachieving it or the degree to which the organization is achieving it. This can use any 767 \nstatus scheme, such as a simple status (e.g., Achieved, Not Achieved) or a more granular 768 \nscheme that indicates the degree of progress (e.g., Not Evaluated, Planned, Partially 769 \nAchieved, Fully Achieved). More detailed status values can provide more insights when 770 \ncreating a gap analysis or action plan. An organization may also include its Tier selection.  771 \nSelected \nFramework \nOutcomes \n(Functions, \nCategories, or \nSubcategories) \nCurrent \nPolicies, \nProcesses, \nand \nProcedures \nCurrent \nInternal \nPractices \nTarget \nPriority \nTarget \nPolicies, \nProcesses, \nand \nProcedures \nTarget \nRoles and \nResponsi-\nbilities \nTarget \nSelected \nInformative \nReferences \nNotes",
+        "score": 0.6721,
+        "exact_match": false
+      },
+      {
+        "chunk_id": "5eb419a15593476086e151f92fade889-p27-c0",
+        "document_id": "5eb419a15593476086e151f92fade889",
+        "page_number": 27,
+        "page_label": null,
+        "text": "Initial Public Draft The NIST Cybersecurity Framework 2.0 \n  18 \n 606 \nAn organization can use Framework Profiles to delineate cybersecurity standards and practices to 607 \nincorporate into contracts with suppliers and provide a common language to communicate those 608 \nrequirements to suppliers. Profiles can also be used by suppliers to express their cybersecurity 609 \nposture and related standards and practices. 610 \nTarget Profiles can be used to inform decisions about buying products and services based on 611 \nrequirements to address gaps. This often entails some degree of trade-off with other 612 \nrequirements, comparing multiple products or services and considering other needs such as cost, 613 \nfunctionality, and supplier and supply chain risks. Once a product or service is purchased, the 614 \nProfile can be used to track and address residual cybersecurity risk. For example, if the service or 615 \nproduct does not meet all of the cybersecurity objectives described in the Target Profile, the 616 \nresidual risk can be addressed through other actions. The Profile also provides the organization 617 \nwith a method for assessing whether the product meets cybersecurity outcomes through periodic 618 \nreview and testing. A Profile can sharpen the organization\u2019s focus on desired cybersecurity 619 \noutcomes throughout the supply chain. 620 \n Integrating Cybersecurity Risk Management With Other Risk Management 621 \nDomains Using the Framework  622 \nIn addition to cybersecurity risks, every organization faces numerous other types of risk and may 623 \nuse frameworks and management tools that are specific to them. Sometimes two types of risk 624 \nhave commonalities, as Fig. 7 depicts through overlapping cybersecurity and privacy risks. 625 \nCybersecurity and privacy risk management have some of the same objectives, so integrating 626 \ntheir approaches helps ensure that all risks are considered and that efforts are not duplicated. 627 \nSection 4.1 discusses an example of integrating risk management approaches \u2014 using the 628 \nCybersecurity Framework and the Privacy Framework together. 629 \nSome organizations integrate all of their risk management efforts at a high level by using 630 \nenterprise risk management (ERM). Section 4.2 discusses using the Cybersecurity Framework as 631 \npart of ERM.",
+        "score": 0.6639,
+        "exact_match": false
+      }
     ],
     "cites_expected_page": true,
     "mentions_all": true,
@@ -132,9 +252,20 @@
     ],
     "top_score": 0.6906,
     "rank": 1,
-    "answer": "A Community Profile is a Target Profile created to address shared interests and goals among a group of organizations. It can serve as the basis for organizations\u2019 own Target Profiles, may be developed for a sector, subsector, specific use case, or technology, and can be developed collaboratively or by one organization for others to use.",
+    "answer": "A **Community Profile** is a **Target Profile** created to address shared interests and goals among a group of organizations.\n\n- It can serve as the basis for other organizations\u2019 Target Profiles and is typically developed for a **sector**, **subsector**, a specific **use case**, or a particular **technology**.\n- A Community Profile may be developed collaboratively by multiple organizations or by one organization for others to use; examples from CSF 1.1 are available on the NIST website.",
     "cited_pages": [
       18
+    ],
+    "sources": [
+      {
+        "chunk_id": "5eb419a15593476086e151f92fade889-p18-c0",
+        "document_id": "5eb419a15593476086e151f92fade889",
+        "page_number": 18,
+        "page_label": null,
+        "text": "Initial Public Draft The NIST Cybersecurity Framework 2.0 \n  9 \npractices, including those for specific sectors or technologies, as Fig. 3 illustrates. Organizations 308 \nthen can prioritize their actions to achieve specific outcomes and communicate that information 309 \nto internal and external stakeholders. Appendix A provides a notional Profile template.  310 \n 311 \nFig. 3. Cybersecurity Framework Profiles 312 \nThere are two types of Profiles: 313 \n\u2022 A Current Profile covers the Core\u2019s outcomes that an organization is currently achieving 314 \n(or attempting to achieve) and characterizes how or to what extent each outcome is being 315 \nachieved.  316 \n\u2022 A Target Profile covers the desired outcomes that an organization has selected and 317 \nprioritized from the Core for achieving its cybersecurity risk management objectives. A 318 \nTarget Profile takes into account anticipated changes to the organization\u2019s cybersecurity 319 \nposture, such as new requirements, new technology adoption, and cybersecurity threat 320 \nintelligence trends. 321 \nSome organizations prefer to create a Current Profile first \u2014 for example, an organization that 322 \nwants to review its current efforts first and then think about areas for improvement. Others prefer 323 \nto start with a Target Profile to work toward. For example, an organization that needs to meet a 324 \nset of new requirements might focus on developing its Target Profile first and in the course of 325 \ndoing so, also determine its current cybersecurity posture for its Current Profile.  326 \n 327 \nA Community Profile is a Target Profile created to address shared interests and goals among a \ngroup of organizations. Organizations can consider using it as the basis for their own Target \nProfile. An example of a Community Profile is one developed for a sector or subsector, or for \na specific use case or technology. A Community Profile could be developed by organizations \ncollaboratively, or it could be developed by one organization for others to use. Examples of \nCSF 1.1 Community Profiles can be found on the NIST Cybersecurity Framework website, \nwhich NIST will update as new Community Profiles are developed for CSF 2.0.",
+        "score": 0.6906,
+        "exact_match": false
+      }
     ],
     "cites_expected_page": true,
     "mentions_all": true,
@@ -158,12 +289,40 @@
     ],
     "top_score": 0.7712,
     "rank": 1,
-    "answer": "The excerpts list these steps (from Section 3.1.2) for creating and using Framework Profiles:\n\n1. Define the use case for the Profiles \u2014 scope the Profiles by stating the reason for creating them, what divisions/assets/services are in scope, who will develop/review/operationalize them, and who will set expectations for achieving the outcomes. (Step 1)\n\n2. Gather the information needed to prepare the Profiles \u2014 collect organizational policies, risk-management priorities and resources, applicable standards and requirements, work roles, and governance information (e.g., mission, stakeholders, needs) needed for a Target Profile. (Step 2)\n\n3. Create Current and Target Profiles \u2014 choose what supporting elements to include for each selected Framework outcome (e.g., priority, current status, policies/processes, practices/tools/responsibilities, metrics, informative references) and fill those elements in for both Current and Target Profiles; Appendix A provides a notional template. (Step 3)\n\n4. Analyze the Profiles and create an action plan \u2014 use the analysis to prioritize gaps and plan actions to move from Current to Target Profiles. (Step 4)\n\nAdditional guidance in the excerpts: repeat these steps as often as needed for continual improvement; engage stakeholders across the organization when developing Profiles; and organizations may develop multiple Profiles for different use cases or scopes (enterprise, business units, critical systems, products/services).",
+    "answer": "The Framework describes four steps to create and use Profiles: define the use case, gather information, create Current and Target Profiles, and analyze the Profiles to create an action plan.\n\n1. **Define the use case** \u2014 scope the Profile by documenting the **reason**, in-scope divisions/assets/services, who will develop/review/operationalize the Profile, and who will set expectations for achieving outcomes (Page 20).\n2. **Gather information** \u2014 collect organizational policies, risk-management priorities and resources, applicable cybersecurity requirements/standards, work roles, and understand governance (e.g., mission, stakeholders, GOVERN Function) to inform a Target Profile (Page 20).\n3. **Create Current and Target Profiles** \u2014 choose which Framework outcomes to include and fill in supporting **elements** (examples: outcome priority, current status, policies/processes, practices/tools/responsibilities, metrics, informative references). Appendix A gives a template and examples; organizations may use the NICE Framework for workforce descriptions (Page 20, Page 32).\n4. **Analyze the Profiles and create an action plan** \u2014 assess gaps, prioritize actions, and plan improvements (Page 20).\n\nAdditional notes:\n- These steps are iterative; organizations should repeat them as needed and communicate across stakeholders (executive leadership, risk management, security, legal, HR, acquisition, operations) to improve Profile development and tie monitoring to mission objectives (Page 21).\n- Organizations may develop multiple Profiles for different scopes (enterprise, business units, suppliers, critical systems, products/services) (Page 21).",
     "cited_pages": [
       19,
       20,
-      21,
-      32
+      21
+    ],
+    "sources": [
+      {
+        "chunk_id": "5eb419a15593476086e151f92fade889-p19-c0",
+        "document_id": "5eb419a15593476086e151f92fade889",
+        "page_number": 19,
+        "page_label": null,
+        "text": "Initial Public Draft The NIST Cybersecurity Framework 2.0 \n  10 \n3.1.1. Ways to Use Profiles 328 \nOrganizations can create and use Profiles to utilize the full capabilities of the Framework (as 329 \ndiscussed in Section 1). While organizations can use the Framework without Profiles, they 330 \nprovide the opportunity to develop a prioritized roadmap to achieve the cybersecurity outcomes 331 \nof the Framework. There are many ways to use Profiles, including to:  332 \n\u2022 Compare current cybersecurity practices to sector-specific standards and regulatory 333 \nrequirements 334 \n\u2022 Document the Informative References (e.g., standards, guidelines, and policies) and the 335 \npractices (e.g., procedures and safeguards) currently in place and planned in the future  336 \n\u2022 Set cybersecurity goals for the organization, identify gaps between current practices and 337 \nthe goals, and plan how to address the gaps in a cost-effective manner 338 \n\u2022 Prioritize cybersecurity outcomes 339 \n\u2022 Assess progress toward achieving the organization\u2019s cybersecurity goals 340 \n\u2022 Determine where the organization may have cybersecurity gaps with respect to an 341 \nemerging threat or a new technology  342 \n\u2022 Communicate about the cybersecurity capabilities an organization provides \u2014 for 343 \nexample, to business partners or to prospective customers of the organization\u2019s 344 \ntechnology products and services 345 \n\u2022 Express the organization\u2019s cybersecurity requirements and expectations to suppliers, 346 \npartners, and other third parties 347 \n\u2022 Integrate cybersecurity and privacy risk management programs by analyzing gaps 348 \nbetween NIST Cybersecurity and Privacy Framework Profiles 349 \n3.1.2. Steps for Creating and Using Profiles 350 \nThe steps described below and summarized in Fig. 4 illustrate one way an organization could use 351 \nCurrent and Target Profiles to help inform continuous improvement of its cybersecurity: 352 \n 353 \nFig. 4. Steps for creating and using Cybersecurity Framework Profiles 354",
+        "score": 0.7712,
+        "exact_match": false
+      },
+      {
+        "chunk_id": "5eb419a15593476086e151f92fade889-p20-c0",
+        "document_id": "5eb419a15593476086e151f92fade889",
+        "page_number": 20,
+        "page_label": null,
+        "text": "Initial Public Draft The NIST Cybersecurity Framework 2.0 \n  11 \n1. Define the use case for the Profiles. The use case defines the high-level facts and 355 \nassumptions on which the Profiles will be based, as a way of scoping the Profiles. This 356 \ncan include: 357 \n\u2022 The reason for creating the Profiles  358 \n\u2022 The organization\u2019s divisions, information and technology assets, services, and other 359 \nelements that are in scope for these Profiles  360 \n\u2022 Those who will develop, review, and operationalize the Profiles 361 \n\u2022 The individuals who will set expectations for actions to achieve the cybersecurity 362 \noutcomes 363 \n2. Gather the information needed to prepare the Profiles. An organization can gather 364 \nrelevant resources prior to preparing the Profiles, such as organizational policies, risk 365 \nmanagement priorities and resources, cybersecurity requirements and standards followed 366 \nby the organization, and work roles. Understanding cybersecurity governance \u2014 such as 367 \nidentifying the organization\u2019s mission, its stakeholders, and their needs and expectations, 368 \nas outlined in the GOVERN Function \u2014 is generally needed for preparing a Target Profile.  369 \n3. Create Current and Target Profiles. Determine what types of supporting information 370 \n(also known as elements) each Profile should include for each of the selected Framework 371 \noutcomes, and fill in the elements for each selected outcome. Consider the risk 372 \nimplications of the current state to inform target state planning and prioritization. 373 \nAppendix A provides a notional template for Current and Target Profiles and examples of 374 \ncommon elements that organizations can choose to use. Examples of elements in a Profile 375 \nfor each outcome Category or Subcategory include the outcome\u2019s priority compared to 376 \nother outcomes; current status in achieving the outcome; policies, processes, and 377 \nprocedures; practices, including tools and responsibilities; metrics and measurements; 378 \ninformative references; and any other supporting information that an organization 379 \nconsiders helpful. Organizations documenting responsibilities may employ the 380 \nWorkforce Framework for Cybersecurity (NICE Framework), which provides a common 381 \nlexicon for describing cybersecurity work.   382 \n4. Analyze the Profiles and create an action plan.",
+        "score": 0.7469,
+        "exact_match": false
+      },
+      {
+        "chunk_id": "5eb419a15593476086e151f92fade889-p21-c0",
+        "document_id": "5eb419a15593476086e151f92fade889",
+        "page_number": 21,
+        "page_label": null,
+        "text": "Initial Public Draft The NIST Cybersecurity Framework 2.0 \n  12 \nrepeating these steps. Given the importance of continual improvement, an organization 397 \ncan repeat the steps as often as needed. 398 \nProfile development can be improved through communication across an organization, including 399 \nbut not limited to key stakeholders from executive leadership, risk management, security, legal, 400 \nhuman resources, acquisition, and operations. For example, Profile developers can reach out to 401 \nleaders within the organization to confirm which resources (e.g., facilities, personnel, systems) 402 \nare most relevant to achieving the objectives (e.g., for a business unit). Those leaders can then 403 \nshare their risk-related expectations for the selected resources with the implementers. By using 404 \nCurrent and Target Profiles, cybersecurity planning and monitoring are tightly tied to 405 \norganizational objectives, and mission-level planners can understand the residual risk of 406 \nuncertainty in terms of likelihood and impact to the mission.  407 \nAn organization may choose to develop multiple Profiles that each address a different use case 408 \nand scope. This can enable better prioritization of activities and outcomes where there may be 409 \ndiffering degrees of cybersecurity risk while still allowing an organization to use the overarching 410 \nFramework structure for consistency across use cases. Examples include describing a 411 \ncybersecurity outcome posture for: 412 \n\u2022 An entire enterprise 413 \n\u2022 Each of an organization\u2019s major business units 414 \n\u2022 Business partners or suppliers 415 \n\u2022 Each of an organization\u2019s most critical systems 416 \n\u2022 Products or services with cybersecurity requirements 417 \n Assessing and Prioritizing Cybersecurity Outcomes With the Framework  418 \nStep 3, \u201cCreate Current and Target Profiles\u201d in Section 3.1 mentions that creating Profiles means 419 \nfilling in the elements for each selected Core outcome. Each organization needs to determine the 420 \nvalues to enter into its own Profiles. The Framework does not prescribe specific standards, 421 \nguidelines, or practices to meet the outcomes. Rather, it gives organizations the flexibility to 422 \nassess their own cybersecurity outcomes in different ways and does not prescribe a single 423 \napproach.",
+        "score": 0.7079,
+        "exact_match": false
+      }
     ],
     "cites_expected_page": true,
     "mentions_all": true,
@@ -187,9 +346,29 @@
     ],
     "top_score": 0.634,
     "rank": 2,
-    "answer": "The deadline for submitting public comments was Friday, November 4, 2023.",
+    "answer": "The deadline for submitting public comments was Friday, November 4, 2023.\n\n- Submit comments to: cyberframework@nist.gov\n- Note: All relevant comments (including attachments) will be made publicly available; do not include personal, sensitive, confidential, or promotional business information.",
     "cited_pages": [
       2
+    ],
+    "sources": [
+      {
+        "chunk_id": "5eb419a15593476086e151f92fade889-p2-c1",
+        "document_id": "5eb419a15593476086e151f92fade889",
+        "page_number": 2,
+        "page_label": null,
+        "text": "Implementation Examples should be updated and whether and how to accept Implementation Examples \ndeveloped by the community. \nAs the CSF 2.0 is finalized, the updated Implementation Examples and Informative References will be \nmaintained online on the NIST Cybersecurity Framework website, leveraging the NIST Cybersecur ity and \nPrivacy Reference Tool (CPRT). Resource owners and authors who are interested in mapping their resources to \nthe final CSF 2.0 to create Informative References should reach out to NIST. \nFeedback on this CSF 2.0 Public Draft, as well as the related Implementation Examples draft, may be \nsubmitted to cyberframework@nist.gov by Friday, November 4, 2023. \nAll relevant comments, including attachments and other supporting material, will be made publicly available on \nthe NIST CSF 2.0 website. Personal, sensitive, confidential, or promotional business information should not be \nincluded. Comments with inappropriate language will not be considered. \nThis draft will be discussed at the third CSF workshop, which will be held this fall. NIST does not plan to \nrelease another draft of CSF 2.0 for comment. Feedback on this draft will inform development of the \nfinal CSF 2.0 to be published in early 2024.",
+        "score": 0.5528,
+        "exact_match": false
+      },
+      {
+        "chunk_id": "5eb419a15593476086e151f92fade889-p2-c0",
+        "document_id": "5eb419a15593476086e151f92fade889",
+        "page_number": 2,
+        "page_label": null,
+        "text": "Public Draft: The NIST Cybersecurity Framework 2.0 \nNational Institute of Standards and Technology \nReleased August 8, 2023 \nNote to Reviewers  \n \nThis is the public draft of the NIST Cybersecurity Framework (CSF or Framework) 2.0. \nThe Framework has been used widely to reduce cybersecurity risks since its initial publication in 2014. Many \norganizations have told NIST that CSF 1.1 remains an effective framework for addressing cybersecurity risks. \nThere is also widespread agreement that changes are warranted to address current and future cybersecurity \nchallenges and to make it easier for organizations to use the Framework. NIST is working with the community \nto ensure that CSF 2.0 is effective for the future while fulfilling the CSF\u2019s original goals and objectives. \nNIST seeks feedback on whether this draft revision addresses organizations\u2019 current and anticipated future \ncybersecurity challenges, is aligned with leading practices and guidance resources, and reflects comments \nreceived so far. In addition, NIST requests ideas on the best way to present the modifications from CSF 1.1 to \nCSF 2.0 to support transition. NIST encourages concrete suggestions for improvements to the draft, including \nrevisions to the narrative and Core. \nThis draft includes an updated version of the CSF Core, reflecting feedback on the April discussion draft. This \npublication does not contain Implementation Examples or Informative References of the CSF 2.0 Core, given \nthe need to frequently update them. Draft, initial Implementation Examples have been released under separate \ncover for public comment. NIST seeks feedback on what types of Examples would be most beneficial to \nFramework users, as well as what existing sources of implementation guidance might be readily adopted as \nsources of Examples (such as the NICE Framework Tasks, for example). NIST also seeks feedback on how \noften Implementation Examples should be updated and whether and how to accept Implementation Examples \ndeveloped by the community. \nAs the CSF 2.0 is finalized, the updated Implementation Examples and Informative References will be \nmaintained online on the NIST Cybersecurity Framework website, leveraging the NIST Cybersecur ity and \nPrivacy Reference Tool (CPRT).",
+        "score": 0.5094,
+        "exact_match": false
+      }
     ],
     "cites_expected_page": true,
     "mentions_all": true,
@@ -213,11 +392,40 @@
     ],
     "top_score": 0.6376,
     "rank": 2,
-    "answer": "The new Category is Improvement (ID.IM) \u2014 the \"Improvement\" Category in the Identify function.",
+    "answer": "The new Category is **Improvement (ID.IM)** within the **Identify Function**.\n\n- Purpose: emphasizes **continuous improvement** of organizational cybersecurity risk management.\n- Examples (subcategories): **ID.IM-01** (continuous evaluation to identify improvements) and **ID.IM-02** (security tests and exercises to identify improvements).",
     "cited_pages": [
       4,
       38,
       44
+    ],
+    "sources": [
+      {
+        "chunk_id": "5eb419a15593476086e151f92fade889-p44-c0",
+        "document_id": "5eb419a15593476086e151f92fade889",
+        "page_number": 44,
+        "page_label": null,
+        "text": "Table 6. IDENTIFY (ID): Help determine the current cybersecurity risk to the organization\nCategory Subcategory \nPublic Draft  The NIST Cybersecurity Framework 2.0 \n \n  35 \nCategory Subcategory \n \nID.RA-06: Risk responses are chosen from the available options, prioritized, planned, tracked, and \ncommunicated (formerly ID.RA-06, RS.MI-03) \n \nID.RA-07: Changes and exceptions are managed, assessed for risk impact, recorded, and tracked (formerly \npart of PR.IP-03) \n \nID.RA-08: Processes for receiving, analyzing, and responding to vulnerability disclosures are established \n(formerly RS.AN-05) \n \nID.RA-09: The authenticity and integrity of hardware and software are assessed prior to acquisition and use \n(formerly PR.DS-08) \nRisk Management Strategy (ID.RM): Dropped (moved to \nGV.RM)   \n  ID.RM-01: Dropped (moved to GV.RM-01)  \n  ID.RM-02: Dropped (moved to GV.RM-02)  \n  ID.RM-03: Dropped (moved to GV.RM-02) \nSupply Chain Risk Management (ID.SC): Dropped (moved to \nGV.SC)    \n  ID.SC-01: Dropped (moved to GV.SC-01) \n  ID.SC-02: Dropped (moved to GV.SC-03, GV.SC-07) \n  ID.SC-03: Dropped (moved to GV.SC-05) \n ID.SC-04: Dropped (moved to GV.SC-07)  \n  ID.SC-05: Dropped (moved to GV.SC-08, ID.IM-02) \nImprovement (ID.IM): Improvements to organizational \ncybersecurity risk management processes, procedures and \nactivities are identified across all Framework Functions   \n  ID.IM-01: Continuous evaluation is applied to identify improvements  \n  \nID.IM-02: Security tests and exercises, including those done in coordination with suppliers and relevant \nthird parties, are conducted to identify improvements (formerly ID.SC-05, PR.IP-10, DE.DP-03)",
+        "score": 0.609,
+        "exact_match": false
+      },
+      {
+        "chunk_id": "5eb419a15593476086e151f92fade889-p4-c0",
+        "document_id": "5eb419a15593476086e151f92fade889",
+        "page_number": 4,
+        "page_label": null,
+        "text": "\u2022 Increase guidance on CSF implementation: \no Implementation Examples added to provide notional examples of action-oriented processes to \nachieve CSF Subcategories. \no Framework Profiles guidance revised significantly and expanded to provide guidance on the steps \nfor using Profiles and to illustrate several purposes for Profiles. \no Notional templates developed that organizations can use or adapt for creating their Profiles and \naction plans. \n\u2022 Emphasize cybersecurity governance: \no New Function, Govern, added to cover organizational context; risk management strategy; \ncybersecurity supply chain risk management; roles, responsibilities, and authorities; policies, \nprocesses, and procedures; and oversight. \no New guidance offered on integrating the Framework with the NIST Privacy Framework and with \nenterprise risk management as discussed in NIST IR 8286. \no Focus on people, process, and technology expanded throughout the implementation of the \nFramework. \n\u2022 Emphasize cybersecurity supply chain risk management: \no New Category in Govern focused on cybersecurity supply chain risk management. \no Content updated to reflect the latest NIST guidance and Framework practices related to \ncybersecurity supply chain risk management and secure software development. \n\u2022 Clarify understanding of cybersecurity measurement and assessment: \no Information on cybersecurity assessment updated, with new pointers to NIST SP 800-55. \no Tiers clarified to focus on cybersecurity governance, risk management, and third-party \nconsiderations. \no Importance of continuous improvement is emphasized through a new Improvement Category in the \nIdentify Function, as well as improvements in guidance on developing and updating Profiles and \naction plans.",
+        "score": 0.6005,
+        "exact_match": false
+      },
+      {
+        "chunk_id": "5eb419a15593476086e151f92fade889-p38-c0",
+        "document_id": "5eb419a15593476086e151f92fade889",
+        "page_number": 38,
+        "page_label": null,
+        "text": "Public Draft  The NIST Cybersecurity Framework 2.0 \n \n  29 \nAppendix C. Framework Core 815 \nThis section presents the Functions, Categories, and Subcategories of the Framework Core. The 816 \nImplementation Examples and Informative References of the Core will be maintained online on 817 \nthe NIST Cybersecurity Framework website to allow for more frequent updates.  818 \nTable 4 shows the CSF 2.0 Core Function and Category names and unique alphabetic identifiers.  819 \nTable 4. CSF 2.0 Core Function and Category Names and Identifiers 820 \n \nThe remaining tables in this appendix show the CSF 2.0 Core Functions, Categories, and 821 \nSubcategories with one table for each Function. Each table also identifies when a CSF 1.1 822 \nCategory or Subcategory has been moved to one or more CSF 2.0 Subcategories for traceability. 823 \nFunction Category Category Identifier \nGovern (GV) Organizational Context GV.OC \n Risk Management Strategy GV.RM \n Cybersecurity Supply Chain Risk Management GV.SC \n Roles, Responsibilities, and Authorities GV.RR \n Policies, Processes, and Procedures GV.PO \n Oversight GV.OV \nIdentify (ID) Asset Management ID.AM \n Risk Assessment ID.RA \n Improvement ID.IM \nProtect (PR) Identity Management, Authentication, and Access Control PR.AA \n Awareness and Training PR.AT \n Data Security PR.DS \n Platform Security PR.PS \n Technology Infrastructure Resilience PR.IR \nDetect (DE) Continuous Monitoring  DE.CM  \n Adverse Event Analysis  DE.AE  \nRespond (RS) Incident Management RS.MA \n Incident Analysis RS.AN \n Incident Response Reporting and Communication RS.CO \n Incident Mitigation RS.MI \nRecover (RC) Incident Recovery Plan Execution RC.RP \n Incident Recovery Communication RC.CO",
+        "score": 0.5825,
+        "exact_match": false
+      }
     ],
     "cites_expected_page": true,
     "mentions_all": true,
@@ -241,10 +449,40 @@
     ],
     "top_score": 0.6594,
     "rank": 1,
-    "answer": "C-SCRM stands for Cybersecurity Supply Chain Risk Management. It is a systematic process for managing exposure to cybersecurity risk throughout supply chains and for developing appropriate response strategies, policies, processes, and procedures. It also aims to extend first-party cybersecurity risk management considerations to third parties, supply chains, and acquired products and services based on supplier criticality and risk assessment.",
+    "answer": "C-SCRM is **Cybersecurity Supply Chain Risk Management** \u2014 a systematic process for managing exposure to cybersecurity risk throughout supply chains and for developing appropriate response strategies, policies, processes, and procedures.\n\n- Primary objective: extend first-party cybersecurity risk management to **third parties, supply chains, and acquired products/services** based on supplier criticality and risk assessments.\n- Examples of risks: products or services that may contain or become vectors for **malicious functionality**, be **counterfeit**, or be vulnerable due to poor manufacturing or development practices.\n- Requires **stakeholder collaboration**, active communication, and an enterprise-wide cultural shift toward heightened awareness and preparedness.\n- In the Framework Core, C-SCRM is addressed by the **GV.SC (Supply Chain Risk Management)** category and related subcategories for establishing programs, roles, and risk-management processes.",
     "cited_pages": [
       25,
-      26
+      26,
+      27
+    ],
+    "sources": [
+      {
+        "chunk_id": "5eb419a15593476086e151f92fade889-p25-c1",
+        "document_id": "5eb419a15593476086e151f92fade889",
+        "page_number": 25,
+        "page_label": null,
+        "text": "549 \nThe Framework can be used to foster an organization\u2019s oversight and communications related to 550 \ncybersecurity risks with stakeholders across supply chains. All types of technology rely on a 551 \ncomplex, globally distributed, extensive, and interconnected supply chain ecosystem with 552 \ngeographically diverse routes and multiple levels of outsourcing. This ecosystem is composed of 553 \npublic- and private-sector entities (e.g., acquirers, suppliers, developers, system integrators, 554 \nexternal system service providers, and other technology-related service providers) that interact to 555 \nresearch, develop, design, manufacture, acquire, deliver, integrate, operate, maintain, dispose of, 556 \nand otherwise utilize or manage technology products and services. These interactions are shaped 557 \nand influenced by technologies, laws, policies, procedures, and practices. 558 \nGiven the complex and interconnected relationships in this ecosystem, supply chain risk 559 \nmanagement (SCRM) is critical for organizations. Cybersecurity SCRM (C-SCRM) is a 560 \nsystematic process for managing exposure to cybersecurity risk throughout supply chains and 561 \ndeveloping appropriate response strategies, policies, processes, and procedures. See SP 800-562 \n161r1 (Revision 1), Cybersecurity Supply Chain Risk Management Practices for Systems and 563 \nOrganizations, for in-depth information on C-SCRM. 564",
+        "score": 0.6594,
+        "exact_match": false
+      },
+      {
+        "chunk_id": "5eb419a15593476086e151f92fade889-p26-c0",
+        "document_id": "5eb419a15593476086e151f92fade889",
+        "page_number": 26,
+        "page_label": null,
+        "text": "Initial Public Draft The NIST Cybersecurity Framework 2.0 \n  17 \nToday, nearly all organizations depend on supply chains. As such, it is increasingly important 565 \nthat they develop capabilities and implement practices to identify, assess, and respond to 566 \ncybersecurity risks throughout the supply chain. The primary objective of C-SCRM is to extend 567 \nappropriate first-party cybersecurity risk management considerations to third parties, supply 568 \nchains, and products and services an organization acquires, based on supplier criticality and risk 569 \nassessment. Examples of risks include products and services that may potentially contain or 570 \nbecome a vector for malicious functionality, are counterfeit, or are vulnerable due to poor 571 \nmanufacturing and development practices within the supply chain. Effective C-SCRM requires 572 \nstakeholders to actively collaborate, communicate, and take actions to secure favorable C-SCRM 573 \noutcomes. It also requires an enterprise-wide cultural shift to a state of heightened awareness and 574 \npreparedness regarding the potential ramifications of cybersecurity risks throughout the supply 575 \nchain.  576 \nThe Framework Core addresses cybersecurity supply chain risk management in two ways.  577 \nWithin the GOVERN function, the Supply Chain Risk Management (GV.SC) Category and its 578 \nSubcategories provide outcomes for establishing, managing, monitoring, and improving an 579 \norganizational cybersecurity supply chain risk management capability or program. The GV.SC 580 \nCategory and Subcategories are specific to C-SCRM and address outcomes such as establishing 581 \na cybersecurity supply chain risk management program [GV.SC-01], roles and responsibilities 582 \n[GV.SC-02], and risk management processes [GV.SC-03] in a manner that is integrated with 583 \nother related capabilities.   584 \nThe Categories and Subcategories within the other Functions \u2014 IDENTIFY, PROTECT, DETECT, 585 \nRESPOND, and RECOVER \u2014 provide a source for the organization to consider as a basis for 586 \nsupplier cybersecurity requirements, both for direct suppliers and as flow-down requirements for 587 \nlower-tier suppliers [GV.SC-05]. Which Categories or Subcategories are selected for inclusion in 588 \ncontractual requirements depends on the supplier criticality [GV.SC-04] and supplier risk 589 \nassessments [GV.SC-07]. Overall, cybersecurity risk in supply chains should be taken into 590 \nconsideration as an organization performs all the Framework Functions.",
+        "score": 0.6375,
+        "exact_match": false
+      },
+      {
+        "chunk_id": "5eb419a15593476086e151f92fade889-p27-c1",
+        "document_id": "5eb419a15593476086e151f92fade889",
+        "page_number": 27,
+        "page_label": null,
+        "text": "example of integrating risk management approaches \u2014 using the 628 \nCybersecurity Framework and the Privacy Framework together. 629 \nSome organizations integrate all of their risk management efforts at a high level by using 630 \nenterprise risk management (ERM). Section 4.2 discusses using the Cybersecurity Framework as 631 \npart of ERM. (See NIST IR 8286, Integrating Cybersecurity and Enterprise Risk Management.) 632 \nThe outer border of Fig. 7 indicates an organization\u2019s full range of ERM risks, with examples of 633 \nrisks including financial, legal, operational, physical security, reputational, and safety \u2014 in 634 \naddition to cybersecurity and privacy risks.  635 \nSecure software development is an area that heavily overlaps with supply chain \nconsiderations. C-SCRM includes software and software-based services that an organization \nacquires from third parties, including open-source software, as well as software that an \norganization creates or integrates for its customers to use. Organizations that acquire or \ndevelop software may follow secure software development practices, such as those described \nin SP 800-218, Secure Software Development Framework (SSDF). Organizations that develop \nsoftware solely for their own use may benefit from adopting other C-SCRM practices, in \neffect treating their software development units as part of their supply chain.",
+        "score": 0.608,
+        "exact_match": false
+      }
     ],
     "cites_expected_page": true,
     "mentions_all": true,
@@ -260,16 +498,27 @@
     ],
     "retrieved_pages": [
       40,
+      44,
       39,
       41,
-      47,
-      43
+      47
     ],
     "top_score": 0.6317,
     "rank": 1,
-    "answer": "GV.RM-02 covers that risk appetite and risk tolerance statements are determined, communicated, and maintained (formerly ID.RM-02, ID.RM-03).",
+    "answer": "GV.RM-02 states that **risk appetite and risk tolerance statements are determined, communicated, and maintained**. \n\n- It was formerly numbered **ID.RM-02** and **ID.RM-03**.",
     "cited_pages": [
       40
+    ],
+    "sources": [
+      {
+        "chunk_id": "5eb419a15593476086e151f92fade889-p40-c0",
+        "document_id": "5eb419a15593476086e151f92fade889",
+        "page_number": 40,
+        "page_label": null,
+        "text": "Table 5. GOVERN (GV): Establish and monitor the organization\u2019s cybersecurity risk management strategy, expectations, and policy\nTable 6. IDENTIFY (ID): Help determine the current cybersecurity risk to the organization \nPublic Draft  The NIST Cybersecurity Framework 2.0 \n \n  31 \nCategory Subcategory \nRisk Management Strategy (GV.RM): The organization\u2019s \npriorities, constraints, risk tolerance and appetite statements, \nand assumptions are established, communicated, and used to \nsupport operational risk decisions (formerly ID.RM)   \n  \nGV.RM-01: Risk management objectives are established and agreed to by organizational stakeholders \n(formerly ID.RM-01) \n  \nGV.RM-02: Risk appetite and risk tolerance statements are determined, communicated, and maintained \n(formerly ID.RM-02, ID.RM-03) \n  \nGV.RM-03: Enterprise risk management processes include cybersecurity risk management activities and \noutcomes (formerly ID.GV-04) \n  \nGV.RM-04: Strategic direction that describes appropriate risk response options is established and \ncommunicated \n  \nGV.RM-05: Lines of communication across the organization are established for cybersecurity risks, \nincluding risks from suppliers and other third parties \n \nGV.RM-06: A standardized method for calculating, documenting, categorizing, and prioritizing \ncybersecurity risks is established and communicated \n \nGV.RM-07: Strategic opportunities (i.e., positive risks) are identified and included in organizational \ncybersecurity risk discussions \nCybersecurity Supply Chain Risk Management (GV.SC): \nCyber supply chain risk management processes are identified, \nestablished, managed, monitored, and improved by \norganizational stakeholders (formerly ID.SC)   \n  \nGV.SC-01: A cybersecurity supply chain risk management program, strategy, objectives, policies, and \nprocesses are established and agreed to by organizational stakeholders (formerly ID.SC-01) \n  \nGV.SC-02: Cybersecurity roles and responsibilities for suppliers, customers, and partners are established, \ncommunicated, and coordinated internally and externally (formerly ID.AM-06) \n \nGV.SC-03: Cybersecurity supply chain risk management is integrated into cybersecurity and enterprise risk \nmanagement, risk assessment, and improvement processes (formerly ID.SC-02) \n GV.SC-04: Suppliers are known and prioritized by criticality",
+        "score": 0.6317,
+        "exact_match": true
+      }
     ],
     "cites_expected_page": true,
     "mentions_all": true,
@@ -285,21 +534,42 @@
       "GV.SC-05"
     ],
     "retrieved_pages": [
+      44,
+      41,
       2,
       2,
-      3,
-      1,
-      38
+      3
     ],
-    "top_score": 0.6989,
-    "rank": null,
-    "answer": "The CSF 2.0 moved the Supply Chain category out of Identify into the Govern function. ID.SC subcategories (including ID.SC-03) were relocated under the new Cybersecurity Supply Chain Risk Management category (GV.SC) and thus would be renumbered/represented under GV.SC in CSF 2.0.",
+    "top_score": 0.6542,
+    "rank": 1,
+    "answer": "ID.SC-03 was removed from the IDENTIFY (ID) category and moved into GOVERN as **GV.SC-05** in CSF 2.0.\n\n- **GV.SC-05**: \u201cRequirements to address cybersecurity risks in supply chains are established, prioritized, and integrated into contracts and other types of agreements with suppliers and other relevant third parties\u201d (formerly **ID.SC-03**).",
     "cited_pages": [
-      38
+      41,
+      44
     ],
-    "cites_expected_page": false,
-    "mentions_all": false,
-    "correct": false
+    "sources": [
+      {
+        "chunk_id": "5eb419a15593476086e151f92fade889-p44-c0",
+        "document_id": "5eb419a15593476086e151f92fade889",
+        "page_number": 44,
+        "page_label": null,
+        "text": "Table 6. IDENTIFY (ID): Help determine the current cybersecurity risk to the organization\nCategory Subcategory \nPublic Draft  The NIST Cybersecurity Framework 2.0 \n \n  35 \nCategory Subcategory \n \nID.RA-06: Risk responses are chosen from the available options, prioritized, planned, tracked, and \ncommunicated (formerly ID.RA-06, RS.MI-03) \n \nID.RA-07: Changes and exceptions are managed, assessed for risk impact, recorded, and tracked (formerly \npart of PR.IP-03) \n \nID.RA-08: Processes for receiving, analyzing, and responding to vulnerability disclosures are established \n(formerly RS.AN-05) \n \nID.RA-09: The authenticity and integrity of hardware and software are assessed prior to acquisition and use \n(formerly PR.DS-08) \nRisk Management Strategy (ID.RM): Dropped (moved to \nGV.RM)   \n  ID.RM-01: Dropped (moved to GV.RM-01)  \n  ID.RM-02: Dropped (moved to GV.RM-02)  \n  ID.RM-03: Dropped (moved to GV.RM-02) \nSupply Chain Risk Management (ID.SC): Dropped (moved to \nGV.SC)    \n  ID.SC-01: Dropped (moved to GV.SC-01) \n  ID.SC-02: Dropped (moved to GV.SC-03, GV.SC-07) \n  ID.SC-03: Dropped (moved to GV.SC-05) \n ID.SC-04: Dropped (moved to GV.SC-07)  \n  ID.SC-05: Dropped (moved to GV.SC-08, ID.IM-02) \nImprovement (ID.IM): Improvements to organizational \ncybersecurity risk management processes, procedures and \nactivities are identified across all Framework Functions   \n  ID.IM-01: Continuous evaluation is applied to identify improvements  \n  \nID.IM-02: Security tests and exercises, including those done in coordination with suppliers and relevant \nthird parties, are conducted to identify improvements (formerly ID.SC-05, PR.IP-10, DE.DP-03)",
+        "score": 0.6542,
+        "exact_match": true
+      },
+      {
+        "chunk_id": "5eb419a15593476086e151f92fade889-p41-c0",
+        "document_id": "5eb419a15593476086e151f92fade889",
+        "page_number": 41,
+        "page_label": null,
+        "text": "Table 5. GOVERN (GV): Establish and monitor the organization\u2019s cybersecurity risk management strategy, expectations, and policy\nTable 6. IDENTIFY (ID): Help determine the current cybersecurity risk to the organization \nPublic Draft  The NIST Cybersecurity Framework 2.0 \n \n  32 \nCategory Subcategory \n \nGV.SC-05: Requirements to address cybersecurity risks in supply chains are established, prioritized, and \nintegrated into contracts and other types of agreements with suppliers and other relevant third parties \n(formerly ID.SC-03) \n \nGV.SC-06: Planning and due diligence are performed to reduce risks before entering into formal supplier or \nother third-party relationships \n  \nGV.SC-07: The risks posed by a supplier, their products and services, and other third parties are identified, \nrecorded, prioritized, assessed, responded to, and monitored over the course of the relationship (formerly \nID.SC-02, ID.SC-04) \n \nGV.SC-08: Relevant suppliers and other third parties are included in incident planning, response, and \nrecovery activities (formerly ID.SC-05) \n  \nGV.SC-09: Supply chain security practices are integrated into cybersecurity and enterprise risk management \nprograms, and their performance is monitored throughout the technology product and service life cycle \n \nGV.SC-10: Cybersecurity supply chain risk management plans include provisions for activities that occur \nafter the conclusion of a partnership or service agreement  \nRoles, Responsibilities, and Authorities (GV.RR): \nCybersecurity roles, responsibilities, and authorities to foster \naccountability, performance assessment, and continuous \nimprovement are established and communicated (formerly \nID.GV-02)   \n  \nGV.RR-01: Organizational leadership is responsible and accountable for cybersecurity risk and fosters a \nculture that is risk-aware, ethical, and continually improving \n  \nGV.RR-02: Roles, responsibilities, and authorities related to cybersecurity risk management are established, \ncommunicated, understood, and enforced (formerly ID.AM-06, ID.GV-02, DE.DP-01)  \n  \nGV.RR-03: Adequate resources are allocated commensurate with cybersecurity risk strategy, roles and \nresponsibilities, and policies \n  GV.RR-04: Cybersecurity is included in human resources practices (formerly PR.IP-11)  \nPolicies, Processes, and Procedures (GV.PO): \nOrganizational cybersecurity policies, processes, and \nprocedures are established, communicated, and enforced \n(formerly ID.GV-01)",
+        "score": 0.6064,
+        "exact_match": true
+      }
+    ],
+    "cites_expected_page": true,
+    "mentions_all": true,
+    "correct": true
   },
   {
     "question": "What does PR.DS-11 say about backups?",
@@ -318,9 +588,20 @@
     ],
     "top_score": 0.6813,
     "rank": 1,
-    "answer": "PR.DS-11: Backups of data are created, protected, maintained, and tested (formerly PR.IP-04).",
+    "answer": "PR.DS-11 states that **backups of data are created, protected, maintained, and tested**.\n\n- **Created**: backups are produced for data\n- **Protected**: backups are safeguarded from threats\n- **Maintained**: backups are kept current and usable\n- **Tested**: backups are regularly verified for integrity and restorability",
     "cited_pages": [
       47
+    ],
+    "sources": [
+      {
+        "chunk_id": "5eb419a15593476086e151f92fade889-p47-c0",
+        "document_id": "5eb419a15593476086e151f92fade889",
+        "page_number": 47,
+        "page_label": null,
+        "text": "Table 7. PROTECT (PR): Use safeguards to prevent or reduce cybersecurity risk\nCategory Subcategory \nPublic Draft  The NIST Cybersecurity Framework 2.0 \n \n  38 \nCategory Subcategory \n PR.DS-08: Dropped (moved to ID.RA-09, DE.CM-09) \n PR.DS-09: Data is managed throughout its life cycle, including destruction (formerly PR.IP-06) \n PR.DS-10: The confidentiality, integrity, and availability of data-in-use are protected (formerly PR.DS-05) \n PR.DS-11: Backups of data are created, protected, maintained, and tested (formerly PR.IP-04) \nInformation Protection Processes and Procedures (PR.IP): \nDropped (moved to other Categories and Functions)   \n  PR.IP-01: Dropped (moved to PR.PS-01)  \n PR.IP-02: Dropped (moved to ID.AM-08) \n PR.IP-03: Dropped (moved to PR.PS-01, ID.RA-07)  \n PR.IP-04: Dropped (moved to PR.DS-11)  \n PR.IP-05: Dropped (moved to PR.IR-02)  \n PR.IP-06: Dropped (moved to PR.DS-09) \n PR.IP-07: Dropped (moved to ID.IM-03) \n PR.IP-08: Dropped (moved to ID.IM-03) \n  PR.IP-09: Dropped (moved to ID.IM-04) \n  PR.IP-10: Dropped (moved to ID.IM-02) \n  PR.IP-11: Dropped (moved to GV.RR-04)  \n  PR.IP-12: Dropped (moved to ID.RA-01, PR.PS-02) \nMaintenance (PR.MA): Dropped (moved to ID.AM-08)   \n  PR.MA-01: Dropped (moved to ID.AM-08, PR.PS-03) \n  PR.MA-02: Dropped (moved to ID.AM-08, PR.PS-02) \nProtective Technology (PR.PT): Dropped (moved to other \nProtect Categories)    \n  PR.PT-01: Dropped (moved to PR.PS-04) \n  PR.PT-02: Dropped (moved to PR.DS-01, PR.PS-01)",
+        "score": 0.6813,
+        "exact_match": true
+      }
     ],
     "cites_expected_page": true,
     "mentions_all": true,
@@ -343,9 +624,20 @@
     ],
     "top_score": 0.5974,
     "rank": 2,
-    "answer": "The primary audience is those responsible for developing and leading a cybersecurity program.",
+    "answer": "**Primary audience:** The Framework\u2019s primary audience is **those responsible for developing and leading a cybersecurity program**.\n\n- It is also useful to other stakeholders involved in managing risk, including **executives, boards of directors, acquisition professionals, technology professionals, risk managers, lawyers, human resources specialists, and cybersecurity and risk management auditors**.\n- The Framework can also assist **policymakers** (such as associations, professional organizations, and regulators) in setting and communicating cybersecurity priorities.",
     "cited_pages": [
       12
+    ],
+    "sources": [
+      {
+        "chunk_id": "5eb419a15593476086e151f92fade889-p12-c0",
+        "document_id": "5eb419a15593476086e151f92fade889",
+        "page_number": 12,
+        "page_label": null,
+        "text": "Initial Public Draft The NIST Cybersecurity Framework 2.0 \n  3 \n 133 \nThe Framework should be used in conjunction with other resources to better manage 134 \ncybersecurity risks. The outcomes are based on and are mapped to existing global standards, 135 \nguidelines, and practices. Organizations can use the Framework to efficiently scale their 136 \ncybersecurity programs, address the dynamic and global nature of cybersecurity risks, and adapt 137 \nto technological advances and business and legal requirements. The Framework applies to all 138 \ninformation and communications technology (ICT), including information technology (IT), the 139 \nInternet of Things (IoT), and operational technology (OT) used by an organization. It also 140 \napplies to all types of technology environments, including cloud, mobile, and artificial 141 \nintelligence systems. The Framework is forward-looking and is intended to apply to future 142 \nchanges in technologies and environments. 143 \n Audience 144 \nThe Framework is designed to be used by organizations of all sizes and sectors, including 145 \nindustry, government, academia, and non-profit organizations. The Framework\u2019s taxonomy and 146 \nreferenced standards, guidelines, and practices are not country-specific, and previous versions of 147 \nthe Framework have been successfully leveraged by many governments and other organizations 148 \noutside of the United States.  149 \nThe primary audience for the Framework consists of those responsible for developing and 150 \nleading a cybersecurity program. The Framework can also be used by others involved in 151 \nmanaging risk \u2014 including executives, boards of directors, acquisition professionals, technology 152 \nprofessionals, risk managers, lawyers, human resources specialists, and cybersecurity and risk 153 \nmanagement auditors \u2014 to guide their cybersecurity-related decisions. 154 \nAdditionally, the Framework can be useful to policymakers (such as associations, professional 155 \norganizations, and regulators) to set and communicate priorities for cybersecurity risk 156 \nmanagement. 157 \nWhile many cybersecurity risk management activities focus on conditions that may prevent \nmission objectives from being achieved, it is important to also note conditions that may \nenable or accentuate mission achievement.",
+        "score": 0.5911,
+        "exact_match": false
+      }
     ],
     "cites_expected_page": true,
     "mentions_all": true,
@@ -368,9 +660,29 @@
     ],
     "top_score": 0.7567,
     "rank": 1,
-    "answer": "Version 1.1 of the Framework was published in 2018.",
+    "answer": "Version 1.1 of the Framework was published in 2018.\n\n- The original Framework Version 1.0 was published in 2014 and was updated to **Version 1.1** in **2018**.",
     "cited_pages": [
       13
+    ],
+    "sources": [
+      {
+        "chunk_id": "5eb419a15593476086e151f92fade889-p13-c1",
+        "document_id": "5eb419a15593476086e151f92fade889",
+        "page_number": 13,
+        "page_label": null,
+        "text": "directed NIST to \u201con an \nongoing basis, facilitate and support the development of a voluntary, consensus-based, \nindustry-led set of standards, guidelines, best practices, methodologies, procedures, and \nprocesses to cost-effectively reduce cyber risks to critical infrastructure.\u201d NIST published \nFramework Version 1.0 in 2014 and updated the Framework to 1.1 in 2018. \n \nSince then, Congress has explicitly directed NIST to consider small business concerns (in the \nNIST Small Business Cybersecurity Act) and the needs of institutions of higher education (in \nthe CHIPS and Science Act) in the Framework. While Version 2.0 can be used by any \norganization, NIST will continue to build additional resources to help implement the \nFramework, including an updated NIST Special Publication (SP) 1271, Getting Started with \nthe NIST Cybersecurity Framework: A Quick Start Guide. All resources will be publicly \navailable on the NIST Cybersecurity Framework website.",
+        "score": 0.7567,
+        "exact_match": false
+      },
+      {
+        "chunk_id": "5eb419a15593476086e151f92fade889-p13-c0",
+        "document_id": "5eb419a15593476086e151f92fade889",
+        "page_number": 13,
+        "page_label": null,
+        "text": "Initial Public Draft The NIST Cybersecurity Framework 2.0 \n  4 \n 158 \n Document Structure 159 \nThis document contains the following sections and appendices: 160 \n\u2022 Section 2 explains the basics of the Framework Core: Functions, Categories, 161 \nSubcategories, Implementation Examples, and Informative References. 162 \n\u2022 Section 3 provides an overview of common uses for the Framework, including through 163 \nCurrent and Target Profiles, as well as guidance on using the Framework to understand, 164 \nassess, prioritize, and communicate cybersecurity efforts and cybersecurity supply chain 165 \nrisk management efforts. 166 \n\u2022 Section 4 discusses using the Framework to help integrate cybersecurity risk management 167 \nwith other types of risk management. 168 \n\u2022 Section 5 briefly outlines next steps for readers who want to use the Framework. 169 \n\u2022 Appendix A offers notional templates for Framework Profiles and action plans. 170 \n\u2022 Appendix B describes the Framework Tiers. 171 \n\u2022 Appendix C provides the Framework Core. 172 \n Understanding the Framework Core  173 \nThe Framework Core provides a set of cybersecurity outcomes (arranged by Function, Category, 174 \nand Subcategory), examples of how those outcomes might be achieved (Implementation 175 \nExamples), and references to additional guidance on how to achieve those outcomes 176 \n(Informative References), as depicted in Fig. 1. The cybersecurity outcome statements in the 177 \nCore reflect activities across sectors and are technology-neutral. They are not a checklist of 178 \nactions to perform; the specific actions taken to achieve a cybersecurity outcome will vary by 179 \norganization and use case, as will the individual responsible for those actions. Additionally, the 180 \nExecutive Order 13636, Improving Critical Infrastructure Cybersecurity, issued in February \n2013, directed NIST \u201cto lead the development of a framework to reduce cyber risks to critical \ninfrastructure.\u201d The Cybersecurity Enhancement Act of 2014 directed NIST to \u201con an \nongoing basis, facilitate and support the development of a voluntary, consensus-based, \nindustry-led set of standards, guidelines, best practices, methodologies, procedures, and \nprocesses to cost-effectively reduce cyber risks to critical infrastructure.\u201d NIST published \nFramework Version 1.0 in 2014 and updated the Framework to 1.1 in 2018.",
+        "score": 0.6655,
+        "exact_match": false
+      }
     ],
     "cites_expected_page": true,
     "mentions_all": true,
@@ -393,9 +705,20 @@
     ],
     "top_score": 0.6891,
     "rank": 2,
-    "answer": "92 written responses.",
+    "answer": "**92 written responses** were received to the January 2023 CSF 2.0 Concept Paper.\n\n- Source: Excerpt [Page 3].",
     "cited_pages": [
       3
+    ],
+    "sources": [
+      {
+        "chunk_id": "5eb419a15593476086e151f92fade889-p3-c0",
+        "document_id": "5eb419a15593476086e151f92fade889",
+        "page_number": 3,
+        "page_label": null,
+        "text": "The modifications between Version 1.1 and this version are based on community input through: \n\u2022 The 57 responses to the Discussion Draft of the NIST Cybersecurity Framework 2.0 Core \n\u2022 The 92 written responses to the January 2023 CSF 2.0 Concept Paper \n\u2022 The February 2023 In-Person Working Sessions (attended by approximately 250 participants) \n\u2022 The \u201cJourney to the NIST Cybersecurity Framework 2.0\u201d February 2023 Workshop #2 (attended virtually \nby more than 2,000 participants from 69 countries) \n\u2022 The \u201cJourney to the NIST Cybersecurity Framework 2.0\u201d August 2022 Workshop #1 (attended virtually by \napproximately 4,000 participants from 100 countries) \n\u2022 The 134 written responses to the February 2022 NIST Cybersecurity RFI \n\u2022 Feedback from organizations that have leveraged the CSF over the years \n\u2022 NIST participation at conferences, webinars, roundtables, and meetings around the world \n \nCherilyn Pascoe \nNIST Cybersecurity Framework Program Lead \ncyberframework@nist.gov \n \n \nSummary of selected Framework changes from version 1.1 to this draft: \n\u2022 Recognize broad use of the Framework: \no Title changed to the commonly used name, \u201cCybersecurity Framework\u201d from the original \n\u201cFramework for Improving Critical Infrastructure Cybersecurity.\u201d \no Scope of the Framework has been updated to reflect use by all organizations; the original emphasis \non critical infrastructure application in the narrative and Core has been modified to focus on all \norganizations. \no Original emphasis on securing U.S. critical infrastructure has been modified to focus on \norganizations all around the world to reflect the broad and international use of the Framework. \n\u2022 Relate CSF to other Frameworks and resources:  \no NIST reviewed updates to resources published in recent years to identify changes to the narrative \nand Core; this includes new references to the NIST Privacy Framework, NICE Workforce \nFramework for Cybersecurity (SP 800-181), Secure Software Development Framework (SP 800-\n218), Cybersecurity Supply Chain Risk Management Practices for Systems and Organizations (SP \n800-161r1), Performance Measurement Guide for Information Security (SP 800-55), Integrating \nCybersecurity and Enterprise Risk Management (NIST IR 8286) series, and the Artificial \nIntelligence Risk Management Framework (AI 100-1).",
+        "score": 0.6688,
+        "exact_match": false
+      }
     ],
     "cites_expected_page": true,
     "mentions_all": true,
@@ -418,9 +741,20 @@
     ],
     "top_score": 0.7144,
     "rank": 1,
-    "answer": "RC.RP-03 requires verifying the integrity of backups and other restoration assets before using them for restoration.",
+    "answer": "RC.RP-03 requires that the **integrity of backups and other restoration assets** be verified before using them for restoration.\n\n- In other words: verify backups and other restoration assets prior to performing any restoration.",
     "cited_pages": [
       52
+    ],
+    "sources": [
+      {
+        "chunk_id": "5eb419a15593476086e151f92fade889-p52-c0",
+        "document_id": "5eb419a15593476086e151f92fade889",
+        "page_number": 52,
+        "page_label": null,
+        "text": "Table 10. RECOVER (RC): Restore assets and operations that were impacted by a cybersecurity incident\nCategory Subcategory \nPublic Draft  The NIST Cybersecurity Framework 2.0 \n \n  43 \nCategory Subcategory \n  RS.MI-03: Dropped (moved to ID.RA-06) \nImprovements (RS.IM): Dropped (moved to ID.IM)   \n  RS.IM-01: Dropped (moved to ID.IM-03)  \n  RS.IM-02: Dropped (moved to ID.IM-03)  \n \nTable 10. RECOVER (RC): Restore assets and operations that were impacted by a cybersecurity incident \nCategory Subcategory \nIncident Recovery Plan Execution (RC.RP): Restoration \nactivities are performed to ensure operational availability of \nsystems and services affected by cybersecurity incidents   \n  \nRC.RP-01: The recovery portion of the incident response plan is executed once initiated from the incident \nresponse process  \n  RC.RP-02: Recovery actions are determined, scoped, prioritized, and performed  \n  RC.RP-03: The integrity of backups and other restoration assets is verified before using them for restoration \n \nRC.RP-04: Critical mission functions and cybersecurity risk management are considered to establish post-\nincident operational norms \n  \nRC.RP-05: The integrity of restored assets is verified, systems and services are restored, and normal \noperating status is confirmed \n  \nRC.RP-06: The criteria for determining the end of incident recovery are applied, and incident-related \ndocumentation is completed \nIncident Recovery Communication (RC.CO): Restoration \nactivities are coordinated with internal and external parties   \n  RC.CO-01: Dropped (moved to RC.CO-04) \n  RC.CO-02: Dropped (moved to RC.CO-04)  \n  \nRC.CO-03: Recovery activities and progress in restoring operational capabilities are communicated to \ndesignated internal and external stakeholders",
+        "score": 0.7144,
+        "exact_match": true
+      }
     ],
     "cites_expected_page": true,
     "mentions_all": true,
@@ -443,13 +777,33 @@
     ],
     "top_score": 0.8384,
     "rank": 1,
-    "answer": "The Privacy Framework functions Identify-P, Govern-P, Control-P, and Communicate-P.",
+    "answer": "The Privacy Framework functions that help manage privacy risks unrelated to cybersecurity incidents are **Identify\u2011P**, **Govern\u2011P**, **Control\u2011P**, and **Communicate\u2011P**.\n\n- **Identify\u2011P**\n- **Govern\u2011P**\n- **Control\u2011P**\n- **Communicate\u2011P**",
     "cited_pages": [
       28
     ],
+    "sources": [
+      {
+        "chunk_id": "5eb419a15593476086e151f92fade889-p28-c0",
+        "document_id": "5eb419a15593476086e151f92fade889",
+        "page_number": 28,
+        "page_label": null,
+        "text": "Initial Public Draft The NIST Cybersecurity Framework 2.0 \n  19 \n 636 \nFig. 7. Integrating cybersecurity and privacy risks 637 \n Integrating the Cybersecurity Framework With the Privacy Framework 638 \nCybersecurity and privacy are independent disciplines, but in certain circumstances their 639 \nobjectives overlap, as illustrated by Fig. 7. Cybersecurity risk management is essential for 640 \naddressing privacy risks related to the loss of confidentiality, integrity, and availability of 641 \nindividuals\u2019 data. For example, data breaches could lead to identity theft. However, privacy risks 642 \ncan also be unrelated to cybersecurity incidents. 643 \nOrganizations process data to achieve mission or business purposes, which can give rise to 644 \nprivacy events whereby individuals may experience problems as a result of the data processing. 645 \nNIST describes these problems as ranging from dignity-type effects, such as embarrassment or 646 \nstigma, to more tangible harms, such as discrimination, economic loss, or physical harm.2 647 \nConsequently, when organizations are processing data to conduct cybersecurity activities, they 648 \ncan create privacy risks. For example, some types of incident detection or monitoring activities 649 \n\u2014 particularly those conducted in a manner disproportionate to the intended purpose \u2014 may 650 \nlead individuals to feel surveilled. Additionally, cybersecurity activities can result in the over-651 \ncollection or over-retention of personal information or the disclosure or use of personal 652 \ninformation unrelated to cybersecurity activities. These activities can lead to problems such as 653 \nembarrassment, discrimination, and loss of trust. 654 \nThe NIST Cybersecurity Framework and the NIST Privacy Framework can be used together to 655 \ncollectively address cybersecurity and privacy risks, as illustrated by Fig. 8. As the right side of 656 \nthe Venn diagram depicts, organizations using the Cybersecurity Framework to manage 657 \ncybersecurity risks can leverage the Privacy Framework Identify-P, Govern-P, Control-P, and 658 \nCommunicate-P Functions to identify and manage privacy risks unrelated to cybersecurity 659 \nincidents, such as those described above. The Cybersecurity Framework DETECT, RESPOND, and 660",
+        "score": 0.8384,
+        "exact_match": false
+      },
+      {
+        "chunk_id": "5eb419a15593476086e151f92fade889-p28-c1",
+        "document_id": "5eb419a15593476086e151f92fade889",
+        "page_number": 28,
+        "page_label": null,
+        "text": "656 \nthe Venn diagram depicts, organizations using the Cybersecurity Framework to manage 657 \ncybersecurity risks can leverage the Privacy Framework Identify-P, Govern-P, Control-P, and 658 \nCommunicate-P Functions to identify and manage privacy risks unrelated to cybersecurity 659 \nincidents, such as those described above. The Cybersecurity Framework DETECT, RESPOND, and 660 \n \n \n2 NIST has created an illustrative catalog of problems for use in privacy risk assessment. See NIST Privacy Risk \nAssessment Methodology. Ot her organizations may have created other categories of problems, or may refer to them \nas adverse consequences or harms.",
+        "score": 0.8183,
+        "exact_match": false
+      }
+    ],
     "cites_expected_page": true,
-    "mentions_all": true,
-    "correct": true
+    "mentions_all": false,
+    "correct": false
   },
   {
     "question": "When was this draft withdrawn?",
@@ -472,6 +826,17 @@
     "cited_pages": [
       1
     ],
+    "sources": [
+      {
+        "chunk_id": "5eb419a15593476086e151f92fade889-p1-c0",
+        "document_id": "5eb419a15593476086e151f92fade889",
+        "page_number": 1,
+        "page_label": null,
+        "text": "Withdrawn Draft \n \n \nWarning Notice \n \nThe attached draft document has been withdrawn and is provided solely for historical purposes. \nIt has been followed by the document identified below. \n \nWithdrawal Date February 26, 2024 \nOriginal Release Date August 8, 2023 \n \n \n \nThe attached draft document is followed by: \nStatus Final \nSeries/Number NIST CSWP 29 \nTitle The NIST Cybersecurity Framework (CSF) 2.0 \nPublication Date February 26, 2024 \nDOI https://doi.org/10.6028/NIST.CSWP.29  \nCSRC URL https://csrc.nist.gov/pubs/cswp/29/the-nist-cybersecurity-\nframework-csf-20/final  \nAdditional Information https://www.nist.gov/cyberframework",
+        "score": 0.7647,
+        "exact_match": false
+      }
+    ],
     "cites_expected_page": true,
     "mentions_all": true,
     "correct": true
@@ -491,6 +856,7 @@
     "rank": null,
     "answer": "I couldn't find anything about that in the document.",
     "cited_pages": [],
+    "sources": [],
     "cites_expected_page": null,
     "mentions_all": null,
     "correct": true
@@ -510,6 +876,7 @@
     "rank": null,
     "answer": "I couldn't find anything about that in the document.",
     "cited_pages": [],
+    "sources": [],
     "cites_expected_page": null,
     "mentions_all": null,
     "correct": true
@@ -527,8 +894,9 @@
     ],
     "top_score": 0.5535,
     "rank": null,
-    "answer": "I don\u2019t know. The provided excerpts do not include any instructions for configuring a firewall on a Cisco router. Please provide excerpts that cover firewall configuration or ask again with a source that contains that information.",
+    "answer": "I don\u2019t know \u2014 the provided excerpts from the NIST Cybersecurity Framework 2.0 do not include instructions for configuring a firewall on a Cisco router.",
     "cited_pages": [],
+    "sources": [],
     "cites_expected_page": null,
     "mentions_all": null,
     "correct": true
@@ -546,8 +914,9 @@
     ],
     "top_score": 0.6279,
     "rank": null,
-    "answer": "I don\u2019t know \u2014 the provided excerpts do not state the maximum GDPR fine for a data breach.",
+    "answer": "I don't know. The provided excerpts do not state the maximum GDPR fine for a data breach.\n\n- To answer this, please provide an excerpt that mentions GDPR fines or allow me to use external sources.",
     "cited_pages": [],
+    "sources": [],
     "cites_expected_page": null,
     "mentions_all": null,
     "correct": true

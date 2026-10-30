@@ -6,7 +6,7 @@ from fastapi import APIRouter, Depends, HTTPException, UploadFile
 from fastapi.concurrency import run_in_threadpool
 from sqlalchemy.orm import Session
 
-from app.db.repository import count_chunks, get_document, save_document
+from app.db.repository import count_chunks, delete_document, get_document, list_documents, save_document
 from app.db.session import get_session
 from app.schemas.document import DocumentInfo, UploadSummary
 from app.services.chunker import chunk_pages
@@ -31,9 +31,25 @@ def one_document(document_id: str, session: Annotated[Session, Depends(get_sessi
         chunk_count=count_chunks(session, document_id),
     )
 
-@router.get("/")
-def document(limit: int = 5):
-    return limit
+@router.get("/", response_model=list[DocumentInfo])
+def all_documents(session: Annotated[Session, Depends(get_session)]):
+    return [
+        DocumentInfo(
+            document_id=document.id,
+            filename=document.filename,
+            page_count=document.page_count,
+            chunk_count=chunk_count,
+        )
+        for document, chunk_count in list_documents(session)
+    ]
+
+
+@router.delete("/{document_id}", status_code=204)
+def remove_document(document_id: str, session: Annotated[Session, Depends(get_session)]):
+    document = get_document(session, document_id)
+    if document is None:
+        raise HTTPException(status_code=404, detail="Document not found")
+    delete_document(session, document)
 
 @router.post("/upload", response_model=UploadSummary, status_code=201)
 async def upload(file: UploadFile, session: Annotated[Session, Depends(get_session)]):

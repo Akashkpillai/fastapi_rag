@@ -46,6 +46,12 @@ def test_drops_pages_that_were_not_sent(fake_openai):
     assert result.cited_pages == [39, 40]  # 99 removed, duplicates merged, sorted
 
 
+def test_sources_are_the_excerpts_from_cited_pages(fake_openai):
+    fake_openai(answer_generator.ModelAnswer(answer="ok", cited_pages=[40]))
+    result = answer_generator.generate_answer("q", [chunk(39), chunk(40), chunk(40)])
+    assert [source.page_number for source in result.sources] == [40, 40]
+
+
 def test_refusal_raises(fake_openai):
     fake_openai(None)
     with pytest.raises(answer_generator.AnswerGenerationError):

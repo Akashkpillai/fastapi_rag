@@ -4,9 +4,10 @@ Run only these with: pytest -m integration. They skip if the database isn't runn
 """
 import pytest
 from fastapi.testclient import TestClient
+from sqlalchemy import func, select
 from sqlalchemy.exc import OperationalError
 
-from app.db.models import DocumentRecord
+from app.db.models import ChunkRecord
 from app.db.session import SessionLocal, engine
 from app.main import app
 
@@ -33,10 +34,14 @@ def uploaded(client, sample_pdf_bytes):
     summary = response.json()
     yield summary
 
-    # Remove the test copy so repeated runs don't pile up documents
+    # Remove the test copy (this also tests the delete endpoint) so repeated runs don't pile up documents
+    assert client.delete(f"/document/{summary['document_id']}").status_code == 204
+    assert client.get(f"/document/{summary['document_id']}").status_code == 404
     with SessionLocal() as session:
-        session.delete(session.get(DocumentRecord, summary["document_id"]))
-        session.commit()
+        orphans = session.scalar(
+            select(func.count()).select_from(ChunkRecord).where(ChunkRecord.document_id == summary["document_id"])
+        )
+    assert orphans == 0  # the chunks were deleted with the document
 
 
 def search_pages(client, document_id: str, question: str, top_k: int = 3) -> list[int]:
@@ -53,8 +58,18 @@ def test_upload_stores_every_chunk(client, uploaded):
     assert info["chunk_count"] == uploaded["chunk_count"]
 
 
+def test_upload_appears_in_document_list(client, uploaded):
+    ids = [document["document_id"] for document in client.get("/document/").json()]
+    assert uploaded["document_id"] in ids
+
+
 def test_search_finds_gv_sc_05_table(client, uploaded):
     assert 41 in search_pages(client, uploaded["document_id"], "What is GV.SC-05?")
+
+
+def test_hybrid_search_finds_exact_id(client, uploaded):
+    # Vector search alone ranked general "what changed" pages first; page 44 lists ID.SC-03
+    assert search_pages(client, uploaded["document_id"], "What happened to ID.SC-03 in CSF 2.0?")[0] == 44
 
 
 def test_search_finds_core_functions(client, uploaded):

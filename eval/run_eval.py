@@ -8,6 +8,7 @@ Each question lists the viewer pages that contain its answer; an empty list mean
 """
 import argparse
 import json
+import re
 from pathlib import Path
 
 from fastapi.testclient import TestClient
@@ -42,6 +43,12 @@ def find_or_upload_document(client: TestClient) -> str:
     return response.json()["document_id"]
 
 
+def normalize(text: str) -> str:
+    # Models often write "Control‑P" with a non-breaking hyphen or "Risk-Informed" for "Risk Informed";
+    # treat every dash and run of spaces alike, and drop Markdown bold markers
+    return re.sub(r"[\s\-‐-―]+", " ", text.replace("**", "")).lower()
+
+
 def first_hit_rank(pages: list[int], expected: set[int]) -> int | None:
     # 1-based position of the first retrieved chunk from an expected page
     return next((rank for rank, page in enumerate(pages, start=1) if page in expected), None)
@@ -73,8 +80,8 @@ def evaluate_answer(client, document_id, case) -> dict:
         return {**answer, "cites_expected_page": None, "mentions_all": None, "correct": correct}
 
     cites_expected = bool(expected & set(answer["cited_pages"]))
-    text = answer["answer"].lower()
-    mentions_all = all(term.lower() in text for term in case["must_mention"])
+    text = normalize(answer["answer"])
+    mentions_all = all(normalize(term) in text for term in case["must_mention"])
     return {
         **answer,
         "cites_expected_page": cites_expected,

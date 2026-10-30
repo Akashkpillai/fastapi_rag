@@ -14,6 +14,7 @@ class RetrievedChunk(BaseModel):
     page_label: str | None  # printed label, if the PDF has one
     text: str
     score: float            # cosine similarity: 1 = same meaning, near 0 = unrelated
+    exact_match: bool = False  # found because it contains an ID named in the question
 
 
 class SearchResponse(BaseModel):
@@ -22,5 +23,6 @@ class SearchResponse(BaseModel):
 
 
 class AnswerResponse(BaseModel):
-    answer: str
+    answer: str             # Markdown: a direct answer first, then bullets or steps when useful
     cited_pages: list[int]
+    sources: list[RetrievedChunk] = []  # the excerpts from the cited pages, for showing evidence
