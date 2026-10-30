@@ -9,6 +9,8 @@ class Settings(BaseSettings):
     database_url: str
     embedding_model: str
     embedding_dimensions: int  # must match the model: 384 for bge-small-en-v1.5
+    openai_api_key: str
+    openai_model: str
 
 
 settings = Settings()
